@@ -1,0 +1,10 @@
+#Created by .ignore support plugin (hsz.mobi)
+#This file tells Git which files to ommit from the shared the directory when making changes. View them as personal files
+venv/
+
+app/__pycache__/
+.idea/
+__pycache__/
+
+migrations/versions/*
+logfile
