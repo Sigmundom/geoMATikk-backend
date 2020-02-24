@@ -1,0 +1,133 @@
+ReadME
+
+Restaurant : Tags, skilt, med, komma ; Kjøkken/type, skilt, med, komma
+
+
+
+
+Restaunter:
+Graffi, Midtbyen : Grill, Utested ; Amerikansk
+Sot & Sabrura Torvet : Sushi, Burger ; Asiatisk, Amerikans
+Egon Tårnet : Allround ; Allround
+Frati : Italiensk, Pizza, Pasta ; Italiensk
+San Sebastian, Solsiden : Tapas ; Latinsk, Spansk
+Frida : Mexikansk ; Mexikansk
+Credo Restaurant : Gourmet, Michelin ; Allround
+Fagn : Gourmet, Michelin ; Allround
+San Sebastian, Torvet : Tapas ; Latinsk, Spansk
+Baklandet Skydsstation : Vertshus ; Allround
+Le Bistro : Utested, Italiensk ; Italiensk
+Graffi, Solsiden : Grill, Utested ; Amerikansk
+Havfruen : Fisk, Sjømat ; Norsk
+Sushi Bar, Ravnkloa : Sushi ; Asiatisk
+Sushi Bar, Solsiden : Sushi ; Asiatisk
+Sushi Bar, Heimdal : Sushi ; Asiatisk
+Egon Solsiden : Allround ; Allround
+Egon Prinsen : Allround ; Allround
+Egon Søndre : Allround ; Allround
+Ai Suma : Italiansk ; Italiensk
+Emilies ELD Restaurant & Bar : Gourmet ; Allround
+To Rom og Kjøkken : Gourmet ; Allround
+Ramp Pub & Spiseri : Pub, Utested ; Allround
+Ristorantino Italiano : Italiensk ; Italiensk
+Napoli : Italiensk, Pizza ; Italiansk
+Benja Siam : Thai ; Asiatisk, Thai
+Astrum Grill & Raw Bar : Allround ; Allround
+Big Horn Steak House : Grill ; Amerikansk
+Bakgården Bar & Spiseri : Utested, Tapas ; Latinsk
+Szechuan Restaurant : Kinesisk ; Kinesisk
+Phu Yen : Kinesisk, Thai ; Kinesisk, Thai
+Jonathan Grill : Grill ; Allround
+Persilleriet : Vegetar, Økonlogisk ; Allround
+Tavern Sverresborg : Verthus ; Allround, Norsk
+Oska : Hurtigmat, Pizza ; Italiensk
+Restaurant Nidelven : Allround ; Allround
+Lian Restaurant : Vertshus ; Norsk
+Kona Solsiden : Asiatisk ; Asiatisk
+Kvilhaugen Gård : Vertshus ; Allround
+Domino's Pizza Moholt : Pizza ; Amerikansk
+Domino's Pizza Lerkendal : Pizza ; Amerikansk
+Una Pizzeria e Bar : Pizza, Utested ; Italiensk
+Peppes Pizza Trondheim : Pizza ; Amerikansk
+Peppes Pizza Heimdal : Pizza ; Amerikansk
+Milano Pizzeria : Pizza ; Italiensk
+Vertshuset Grenaderen : Vertshus ; Allround
+Kalas & Canasta : Utested ; Allround
+Alma's Restaurant & Bar : Utested ; Allround
+Fellini : Pizza ; Italiensk
+Amber Restaurant : Kinesisk, Thai, Sushi ; Asiatisk
+Bangkok Cafe : Thai ; Asiatisk
+Bror Bar & Restaurant : Bistro, Burger ; Amerikansk, Mexikansk
+Olivia Solsiden : Pizza, Pasta ; Italiensk
+Cowsea : Grill, Sushi, Utested ; Asiatisk, Amerikansk
+Folk og Fe : Grill, Bistro ; Allround 
+Brasseri Bakklandet : Allround ; Allround
+Indian Tandoori : Indisk ; Indisk
+Nordøst : Allround ; Allround
+TAG Restaurant : Allround, Utested ; Allround
+Taste of India : Indisk ; Indisk, Asiatisk
+Kommandanten : Verthus ; Allround
+O'Learys : Pub ; Amerikansk
+Lan Na : Thai ; Asiatisk
+Søttitre - 73 : Gourmet ; Allround
+Røst Teaterbistro : Gourmet ; Norsk
+Selma pizza og bar  : Pizza, Bar ; Italiensk
+Dahls Pub og Kjøkken : Bistro, Pub ; Allround
+Røft Rotisseri : Grill ; Amerikansk
+Troll Restaurant : Norsk ; Norsk
+Sabrura Bakklandet : Sushi ; Asiatisk
+Mesob Restaurant : Afrikansk ; Afrikansk
+Sushime : Sushi ; Japansk, Asiatisk
+Lille Skansen : Bar, Sjømat ; Allround
+Sabrura Solsiden : Sushi ; Asiatisk
+Super Hero Pizza : Amerikansk, Pizza ; Amerikansk
+Bula Neobistro : Bar ; Allround
+Jossa Mat og Drikke : Allround ; Allround
+Døgnvill Burger : Burger ; Amerikansk
+La Border : Mexikansk ; Mexikansk
+Habitat : Pizza ; Italiensk
+Grano : Pizza ; Italiensk
+Ladejarlen : Pizza ; Allround
+Kraft Bodega : Gourmet ; Allround
+Flipper Kafé : Allround, Kafe ; Allround
+Jimi's Diner : Diner, Burger ; Amerikansk
+Brooklyn Diner & Sportsbar : Diner ; Amerikansk
+Kompis Lade : Burger, Pizza ; Allround
+Kompis Byåsen : Burger, Pizza ; Allround
+Kompis Heimdal : Burger, Pizza ; Allround
+Lille Thailand - Dronningens gate : Thai, Asiatisk
+Brasserie Britannia : Bistro, Brasserie ; Fransk, Amerikansk
+Kona Midtbyen : Asiatisk ; Asiatisk
+Bar&Kafe: Bar, Kafe ; Allround
+Three Lions Pub : Pub, Bar ; Britisk
+Trondhjem Mikrobryggeri : Bar ; Allround
+Bar Passiar : Bar ; Bar , Kafe
+Tulla Fischer : Allround ; Allround 
+Dromedar Kaffebar Moxness : Kaffe ; Kafe
+Dromedar Kaffebar Bakke Bru : Kaffe ; Kafe
+Dromedar Kaffebar Bakklandet : Kaffe ; Kafe
+Dromedar Kaffebar Nordre : Kaffe ; Kafe
+Macbeth : Pub ; Bar
+Barmuda : Allround , Utested, Bar ; Allround
+Bare Blåbær : Allround ; Allround, Kafe
+Bær & Bar : Kafe ; Kafe
+Cafe Dublin : Allround, Pub ; Irsk, Allround
+Søstrene Karlsen : Allround, Utested, Bar ; Allround
+Cafe Løkka : Kafe ; Kafe, Allround 
+Café Ni Muser : Kafe ; Kafe
+Latteliten : Kafe ; Kafe
+Astrum Skybar : Bar ; Bar
+Café To Tårn : Kafe ; Kafe
+Sponhuset : Kafe ; Kafe
+Sot Bar & Burger : Burger ; Amerikansk
+Antikvariatet : Kafe ; Kafe
+Ila Brainnstasjon : Kafe ; Kafe
+Somma Pasticceria : Kafe ; Kafe
+Kafe Skuret : Kafe ; Kafe
+Mormors stuer : Kafe, Vertshus ; Kafe
+Fire Fine : Bar, Utested ; Bar 
+Ladekaia : Allround ; Allround
+Sellanraa Bok og Bar : Kafe ; Kafe
+Café Le Frère : Kafe ; Kafe
+Finnes Kafé : Kafe ; Kafe
+Spontan Vinbar : Vinbar ; Allround, Bar
