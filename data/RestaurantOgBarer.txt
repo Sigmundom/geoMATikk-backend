@@ -1,0 +1,157 @@
+Restaunter:
+Graffi, Midtbyen : 
+Sot & Sabrura Torvet : 
+Egon Tårnet : 
+Frati : 
+San Sebastian, Solsiden : 
+Frida : 
+Credo Restaurant : 
+Fagn : 
+San Sebastian, Torvet : 
+Baklandet Skydsstation : 
+Le Bistro : 
+Graffi, Solsiden : 
+Havfruen : 
+Sushi Bar, Ravnkloa : 
+Sushi Bar, Solsiden : 
+Sushi Bar, Heimdal : 
+Egon Solsiden : 
+Egon Prinsen : 
+Egon Søndre : 
+Ai Suma : 
+Emilies ELD Restaurant & Bar : 
+To Rom og Kjøkken : 
+Ramp Pub & Spiseri : 
+Ristorantino Italiano : 
+Napoli : 
+Benja Siam : 
+Astrum Grill & Raw Bar : 
+Big Horn Steak House : 
+Bakgården Bar & Spiseri : 
+Szechuan Restaurant : 
+Phu Yen : 
+Jonathan Grill : 
+Persilleriet : 
+Tavern Sverresborg : 
+Oska : 
+Restaurant Nidelven : 
+Lian Restaurant : 
+Kona Solsiden : 
+Kvilhaugen Gård : 
+Domino's Pizza Moholt : 
+Domino's Pizza Lerkendal : 
+Una Pizzeria e Bar : 
+Peppes Pizza Trondheim : 
+Peppes Pizza Heimdal : 
+Milano Pizzeria : 
+Vertshuset Grenaderen : 
+Kalas & Canasta : 
+Alma's Restaurant & Bar : 
+Fellini : 
+Amber Restaurant : 
+Bangkok Cafe : 
+Bror Bar & Restaurant : 
+Olivia Solsiden : 
+Cowsea : 
+Folk og Fe : 
+Brasseri Bakklandet : 
+Indian Tandoori : 
+Nordøst : 
+TAG Restaurant : 
+Taste of India : 
+Kommandanten : 
+O'Learys : 
+Lan Na : 
+Søttitre - 73 : 
+Røst Teaterbistro : 
+Selma pizza og bar  : 
+Dahls Pub og Kjøkken : 
+Røft Rotisseri : 
+Troll Restaurant : 
+Sabrura Bakklandet : 
+Mesob Restaurant : 
+Sushime : 
+Lille Skansen : 
+Sabrura Solsiden : 
+Super Hero Pizza : 
+Bula Neobistro : 
+Jossa Mat og Drikke : 
+Døgnvill Burger : 
+La Border : 
+Habitat : 
+Grano : 
+Ladejarlen : 
+Kraft Bodega : 
+Flipper Kafé : 
+Jimi's Diner : 
+Brooklyn Diner & Sportsbar : 
+Kompis Lade : 
+Kompis Byåsen : 
+Kompis Heimdal : 
+Lille Thailand - Dronningens gate : 
+Brasserie Britannia : 
+Kona Midtbyen : 
+
+
+Bar&Kafe:
+Bar Circus : 
+Three Lions Pub : 
+Trondhjem Mikrobryggeri : 
+Fairytale  : 
+Dokkhuset : 
+Bar Passiar : 
+Lille London : 
+Downtown : 
+Tulla Fischer : 
+Dromedar Kaffebar Moxness : 
+Dromedar Kaffebar Bakke Bru : 
+Dromedar Kaffebar Bakklandet : 
+Dromedar Kaffebar Nordre : 
+Macbeth : 
+Barmuda : 
+Kieglekroa : 
+Fru  Lundgreen : 
+Dreams Showbar : 
+Bare Blåbær : 
+Byscenen : 
+Bær & Bar : 
+Cafe Dublin : 
+Kokomo : 
+Søstrene Karlsen : 
+Cafe Løkka : 
+Café Ni Muser  : 
+Krambua : 
+Broen Bar : 
+Latteliten : 
+Astrum Skybar : 
+Café To Tårn : 
+Sponhuset : 
+Sot Bar & Burger : 
+Antikvariatet : 
+Bobbys Bar : 
+Daniel Pub : 
+Ila Brainnstasjon : 
+Somma Pasticceria : 
+Kafe Skuret : 
+Boxer Bar : 
+Moskus : 
+Mormors stuer : 
+Fire Fine : 
+Raus : 
+Diskoteket : 
+Ladekaia : 
+Den Gode Nabo : 
+Sellanraa Bok og Bar : 
+Øx Tap Room : 
+Studio 26 : 
+ Café Le Frère : 
+Heidis Bier Bar : 
+Finnes Kafé : 
+Spontan Vinbar : 
+NB6 Vinbar : 
+Lokal Bar : 
+Grå Bar : 
+Tyven : 
+Work Work : 
+Mellomveien : 
+Britannia Bar : 
