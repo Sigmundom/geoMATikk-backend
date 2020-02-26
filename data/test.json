@@ -20,7 +20,7 @@
         "web": "https://sabrurasushi.no"
     },
     {
-        "adresse": "",
+        "adresse": "Otto Nielsens veg 4",
         "description": "74 meter over bakken kan man nyte utsikten og et måltid fra Egons meny. I tårnrestauranten roterer gulvet langsomt rundt 360 grader, slik at man kan se hele Trondheim i løpet av en time. Egon er en trøndersk restaurantkjede, og menyen varierer fra pizza og burger til indrefilet og fiskeretter.",
         "email": "taarnet@egon.no",
         "image_url": "images/restauranter/egon-tarnet.jpg",
@@ -34,7 +34,7 @@
         "description": "Frati er en restaurant med italiensk meny. Restauranten ble startet i 1973 av de italienske brødrene Minervini, og drives i dag 2. generasjon Minervini.",
         "email": "post@frati.no",
         "image_url": "images/restauranter/frati.jpg",
-        "phone": "+47 73 52 57 33",
+        "phone": "+4773525733",
         "position": "63.4306949029 10.3936753258",
         "title": "Frati",
         "web": "http://www.frati.no/"
@@ -44,7 +44,7 @@
         "description": "San Sebastian Tapas & Vinbar på Solsiden er en av to restauranter i Trondheim oppkalt etter den baskiske byen San Sebastián. Menyen bygger på spanske mattradisjoner med hovedvekt på tapas, men har også med paella og andre retter med typiske iberiske ingredienser. San Sebastian har også en restaurant på Torvet.",
         "email": "solsiden@sansebastian.no",
         "image_url": "images/restauranter/sansebastian-solsiden.jpg",
-        "phone": "+47 73 60 05 00",
+        "phone": "+4773600500",
         "position": "63.434357 10.412509",
         "title": "San Sebastian, Solsiden",
         "web": "http://www.sansebastian.no/"
@@ -54,7 +54,7 @@
         "description": "Frida er en mexicansk restaurant, oppkalt etter kunstneren Frida Kahlo. Det er ikke bare menyen som er mexicansk. Interiøret i restauranten er håndlaget i Mexico og bidrar til å skape en helhetlig mexicansk atmosfære i kjellerlokalene i Fjordgata.",
         "email": "frida_restaurant@hotmail.com",
         "image_url": "images/restauranter/frida.jpg",
-        "phone": "+47 73 53 50 07",
+        "phone": "+4773535007",
         "position": "63.4346256 10.4007007",
         "title": "Frida",
         "web": "http://restaurantfrida.no/"
@@ -64,7 +64,7 @@
         "description": "Michelinstjerne-belønnet restaurant på Lilleby, like nordøst for Trondheim sentrum. Her serveres ikke mat á la carte. I stedet bestemmer kjøkkenet hvilke smaker som skal rendyrkes, med utgangspunkt i råvarene som finnes på en gitt dag. Kokkene komponerer hver dag en unik kombinasjon av retter og vin. Man kan til vanlig velge mellom tre og fem retter. Credo var sammen med Fagn de to første restaurantene i Trondheim som mottok en Michelin-stjerne i februar 2019.",
         "email": "credo@restaurantcredo.no",
         "image_url": "images/restauranter/28577083_1603376816376962_107035807696551936_o.jpg",
-        "phone": "+47 954 37 028",
+        "phone": "+4795437028",
         "position": "63.442545  10.437011",
         "title": "Credo Restaurant",
         "web": "http://www.restaurantcredo.no"
@@ -74,7 +74,7 @@
         "description": "Michelinstjerne-restaurant med hovedservering i første etasje med varianter fra 5-retters opptil 20-retters menyer. I andre etasje er det cocktailbar og bistro med enkle retter på menyen til en overkommelig penge. Fagn overtok de tidligere lokalene til Credo i 2017. Fagn ble i februar 2019 tildelt en Michelin-stjerne, og var sammen med Credo de to første trondheimsrestaurantene som mottok denne anerkjennelsen.",
         "email": "post@fagn.no",
         "image_url": "images/restauranter/fagn.jpg",
-        "phone": "\"+47 458 44 996\"",
+        "phone": "+4745844996",
         "position": "",
         "title": "Fagn",
         "web": "https://www.fagn.no/"
@@ -90,30 +90,31 @@
         "web": "http://www.sansebastian.no/"
     },
     {
+        "adresse": "",
         "description": "Kåret til Årets Kafè av National Geographic Traveler i 2012. Kanskje det koseligste stedet i Skandinavia, ifølge reisebloggeren Andrew Evans. Kafeen holder til i en fredet bygning på idylliske Bakklandet. Bygningen er skjev og skakk, stammer fra 1700-tallet og skal i sin tid ha vært benyttet som skyss-stasjon. Kafédriften startet i byjubileumsåret 1997. Foto: Geir Siggen Hageskal.",
         "email": "post@skydsstation.no",
         "image_url": "images/severdig/baklandetskydsstation2.jpg",
         "phone": "+4773890800",
         "position": "63.4274175  10.403323999999998",
         "title": "Baklandet Skydsstation",
-        "web": ""
+        "web": "http://www.skydsstation.no"
     },
     {
         "adresse": "Olav Tryggvasons gate 27, Trondheim",
         "description": "Bar Circus er en rocka bar som beskriver seg selv som et vorspielsted midt i Trondheim by.",
         "email": "",
         "image_url": "images/bar-kafe/bar-circus.jpg",
-        "phone": "\"tel:+4793461100",
+        "phone": "+4793461100",
         "position": "63.4331322  10.3978887",
         "title": "Bar Circus",
-        "web": ""
+        "web": "http://www.barcircus.no/"
     },
     {
         "adresse": "Brattørgata 12",
         "description": "Three Lions har eksistert i Trondheim siden 2005, og drives av engelskmannen Dougie, som er et velkjent navn blant trondhjemske fotballentusiaster. Puben har vært med i tetsjiktet ved kåringer av Norges beste fotballpub. Stedet har mange skjermer og det er mulig å følge ulike kamper når livesendingene pågår.",
-        "email": "",
+        "email": "dougie@threelions.no",
         "image_url": "images/bar-kafe/three-lions.jpg",
-        "phone": "\"tel:",
+        "phone": "+4740007066",
         "position": "63.434077  10.401209",
         "title": "Three Lions Pub",
         "web": "http://www.threelions.no"
@@ -123,7 +124,7 @@
         "description": "Alt øl som serveres fra tappekran hos Trondhjem Mikrobryggeri er brygget på stedet. Er du heldig kan du se bryggeren i aksjon rundt bryggekjelene bakerst i lokalet.",
         "email": "",
         "image_url": "images/bar-kafe/Mikrobryggeriet.jpg",
-        "phone": "\"tel:+4773517515",
+        "phone": "+4773517515",
         "position": "63.4314  10.392648",
         "title": "Trondhjem Mikrobryggeri",
         "web": "http://tmb.no"
@@ -131,9 +132,9 @@
     {
         "adresse": "Thomas Angells gate 10B",
         "description": "Fairytale er Trondheims første og eneste cupcake-bakeri/cafe. Etter noen år har de nå utvidet utvalget og kan tilby kundene ferske bakverk. Konditoren står opp i grålysningen hver morgen for å kunne tilby kundene ferskbakte kaker, makroner og cupcakes.",
-        "email": "",
+        "email": "post@fairytalecupcakes.no",
         "image_url": "images/bar-kafe/fairytale-cupcakes.jpg",
-        "phone": "\"tel:+4740056108",
+        "phone": "+4740056108",
         "position": "63.432774  10.399249",
         "title": "Fairytale ",
         "web": "http://fairytalecupcakes.no/"
@@ -141,9 +142,9 @@
     {
         "adresse": "Dokkparken 4, Trondheim.",
         "description": "Dokkhuset er en konsertscene med beliggenhet på Nedre Elvehavn i Trondheim. Dokkhuset var tidligere et lokale som ble benyttet ved Trondhjems Mekaniske Værksted. Huset ligger fortsatt like ved Dokken, der skip ble vedlikeholdt, og deler av det historiske verftsinteriøret er også beholdt. Dokkhuset Scene presenterer et konsertprogram, først og fremst med kammermusikk og jazz, men også ny musikk, verdensmusikk og andre eksperimentelle uttrykk. Servering: Se ",
-        "email": "",
+        "email": "post@dokkhuset.no",
         "image_url": "images/bar-kafe/dokkhuset-passiar.jpg",
-        "phone": "+47 73 51 15 90",
+        "phone": "+4773511590",
         "position": "63.43437  10.410838",
         "title": "Dokkhuset",
         "web": "http://www.dokkhuset.no"
@@ -151,9 +152,9 @@
     {
         "adresse": "Dokkparken 4, Trondheim.",
         "description": "Bar Passiar på Dokkhuset har en cafe/bar/restaurant og en meget spennende konsertscene. Her er det nesten daglig konserter, konferanser, events og selskaper. Kjøkkenet er variert med ordinær ala carte meny, buffetservering, tapas og selskapsservering. Bar Passiar har samme driver som utestedene Bare Blåbær og Bær & Bar som ligger i lokaler innerst ved Dokken.",
-        "email": "",
+        "email": "barebb@barebb.no",
         "image_url": "images/bar-kafe/barpassiar.jpg",
-        "phone": "\"tel:+4792606200",
+        "phone": "+4792606200",
         "position": "63.434253  10.410964",
         "title": "Bar Passiar",
         "web": "http://www.barebb.no/"
@@ -161,9 +162,9 @@
     {
         "adresse": "Carl Johans gate 10",
         "description": "Britisk inspirert pub med muligheter for mat og drikke, fotballkamper, dart, biljard og stemning. Lille London har levende musikk flere kvelder i uka.",
-        "email": "",
+        "email": "firmapost@lillelondon.no",
         "image_url": "images/bar-kafe/Lille-London.jpg",
-        "phone": "\"tel:+4773518095",
+        "phone": "+4773518095",
         "position": "63.43395  10.398089",
         "title": "Lille London",
         "web": "http://www.lillelondon.no/"
@@ -171,7 +172,7 @@
     {
         "adresse": "Nordre gate 28",
         "description": "Norges største nattklubb med 8 barer (deriblant pianobar og party-bar) og 4 avdelinger. Aldersgrense 20 år og dresskode (pent antrekk).",
-        "email": "",
+        "email": "postmaster@downtown.no",
         "image_url": "images/bar-kafe/downtown.jpg",
         "phone": "+4773504000",
         "position": "63.4342349  10.396925",
@@ -181,7 +182,7 @@
     {
         "adresse": "Kongens gate 8",
         "description": "Kafé, bar og restaurant oppkalt etter kunsthistoriker Dorothea \"Tulla\" Fischer. Inngang fra Kongens gate via uteservering eller inne via Mercursenteret.",
-        "email": "",
+        "email": "post@tulla.no",
         "image_url": "images/bar-kafe/tulla.jpg",
         "phone": "+4773876782",
         "position": "63.430515  10.398222",
@@ -249,49 +250,19 @@
         "web": "http://www.macbeth.no"
     },
     {
-        "adresse": "Cicignons plass, Trondheim.",
-        "description": "Olavs Pub og Spiseri er en av Trondheims største puber med kapasitet på inntil 500 personer. Puben tilbyr også matservering, live-musikk og stand up show.",
-        "email": "",
-        "image_url": "images/bar-kafe/olavs-pub.jpg",
-        "phone": "+4773806311",
-        "position": "63.4326327  10.4007617",
-        "title": "Olavs Pub og Spiseri",
-        "web": "http://www.nova-trondheim.no/olavs-pub/"
-    },
-    {
         "adresse": "TMV-kaia 9, Trondheim.",
         "description": "Populært utested. To barer i ulike etasjer, a la carte meny og utendørs servering.",
-        "email": "",
+        "email": "post@barmuda.no",
         "image_url": "images/bar-kafe/barmuda.jpg",
-        "phone": "+47 73 60 05 10",
+        "phone": "+4773600510",
         "position": "63.434428  10.412348",
         "title": "Barmuda",
         "web": "http://www.barmuda.no/"
     },
     {
-        "adresse": "TMV-kaia 17, Trondheim.",
-        "description": "Blæst  ligger i det gamle ærverdige Trondheim Mekaniske Verksted på Nedre Elvehavn/Solsiden. I tillegg til bardrift har stedet som ambisjon å være en av Trondheims ledende club-konsertscener.",
-        "email": "",
-        "image_url": "images/bar-kafe/blast.jpg",
-        "phone": "+47 926 91 491",
-        "position": "63.434581  10.411900",
-        "title": "Blæst",
-        "web": "http://www.blaest.no/"
-    },
-    {
-        "adresse": "Dronningens gate 11, Trondheim.",
-        "description": "Uformelt og intimt utested med konsertscene. Stor sjangervariasjon på scenen, alt fra dance og heavy metal til single song writers.",
-        "email": "",
-        "image_url": "images/bar-kafe/Familien.jpg",
-        "phone": "+47 913 75 162",
-        "position": "63.431885  10.393494",
-        "title": "Familien",
-        "web": "http://www.familien.in/"
-    },
-    {
         "adresse": "Kongens gate 30 (inngang fra Holstveita)",
         "description": "Kieglekroa er byens eldste pub, og er et populært treffsted. Her finner du gamle, robuste trebord og benker, levende lys og peisvarme i kombinasjon med god stemning. På Kieglekroa kan du prøve det nederlandske spillet \"sjoelbak\". Stedet er renovert etter en påsatt brann i 2014.",
-        "email": "",
+        "email": "kieglekroa@prinsenhotell.no",
         "image_url": "images/bar-kafe/kieglekroa-ute3.jpg",
         "phone": "+4773807080",
         "position": "63.431319 10.390855",
@@ -303,7 +274,7 @@
         "description": "Puben Fru Lundgreen holder til i en gammel hvelvkjeller like ved Olavshallen. Stedet er oppkalt etter enkefru Catharina som drev brennevinsutsalg i Trondheim under firmanavnet M. H. Lundgreens Enke på 1800-tallet. Midtbyen Rockeklubb er ansvarlig for konsertdriften på stedet, og har jevnlige arrangement.",
         "email": "",
         "image_url": "images/bar-kafe/FruLundgreen.jpg",
-        "phone": "+47 73 52 30 10",
+        "phone": "+4773523010",
         "position": "63.4341113  10.404397",
         "title": "Fru  Lundgreen",
         "web": "http://mirk.no/lundis"
@@ -311,7 +282,7 @@
     {
         "adresse": "Munkegata 68B (bak fiskhallen i Ravnkloa).",
         "description": "Trondheims eneste bar med stripteaseshow. Profesjonelle artister fra inn- og utland.",
-        "email": "",
+        "email": "trondheim@dreams.no",
         "image_url": "images/bar-kafe/Dreams.jpg",
         "phone": "+4773536666",
         "position": "63.4336947  10.3916339",
@@ -321,9 +292,9 @@
     {
         "adresse": "Innherredsveien 16, Trondheim. Inngang fra Dokkparken.",
         "description": "Café Bare Blåbær er et spisested med en variert meny. Sentralt plassert i kaféen står en vedfyrt pizzaovn som gir stedet en egen atmosfære.",
-        "email": "",
+        "email": "barebb@barebb.no",
         "image_url": "images/bar-kafe/bare-blabar.jpg",
-        "phone": "+47 73533033",
+        "phone": "+4773533033",
         "position": "63.433973  10.412324",
         "title": "Bare Blåbær",
         "web": "http://www.barebb.no/"
@@ -331,7 +302,7 @@
     {
         "adresse": "Kongens gate 19, Trondheim (inngang fra Repslagerveita).",
         "description": "Midt i Trondheim ligger Byscenen, en av Trondheims flere storstuer for konserter og store øyeblikk. Byscenen holder til i et gamle ærverdige lokaler (Arbeiderforeningens Hus) og har to konsertsaler.",
-        "email": "",
+        "email": "post@byscenen.no",
         "image_url": "images/bar-kafe/byscenen.jpg",
         "phone": "+4773525200",
         "position": "63.430032  10.391333",
@@ -341,7 +312,7 @@
     {
         "adresse": "Innherredsveien 16, Trondheim (inngang fra Dokkparken).",
         "description": "Bær & Bar ligger vegg i vegg med Café Bare Blåbær, og serverer fra samme meny (felles kjøkken). Kafé på dagtid og mer pub- og barstemning på kveldstid.",
-        "email": "",
+        "email": "barebb@barebb.no",
         "image_url": "images/bar-kafe/baer-og-bar.jpg",
         "phone": "+4773533032",
         "position": "63.433761  10.411780",
@@ -351,7 +322,7 @@
     {
         "adresse": "Kongens gate 15, Trondheim.",
         "description": "Irsk pub og restaurant i Prinsenkrysset. Live musikk med vekt på irske artister og irsk inspirert musikk. Live fotball fra Premier League på TV.",
-        "email": "",
+        "email": "post@cafedublin.no",
         "image_url": "images/bar-kafe/cafe-dublin.jpg",
         "phone": "+4773500001",
         "position": "63.4303894  10.3925876",
@@ -371,7 +342,7 @@
     {
         "adresse": "TMV-kaia 25",
         "description": "Bar og restaurant på Solsiden, og arbeidsgiver for årets norske kokk 2015. Stor uteservering.",
-        "email": "",
+        "email": "epost@sostrenekarlsen.no",
         "image_url": "images/bar-kafe/sostrene-karlsen.jpg",
         "phone": "+4773600025",
         "position": "63.434822  10.411142",
@@ -381,7 +352,7 @@
     {
         "adresse": "Dokkgata 8, Trondheim.",
         "description": "Bar og kafe mellom Bakklandet og Solsiden i sjarmerende gammel trebygning. Godt utvalg innen burger og ølsorter. Kåret til årets beste bar/utested i 2011.",
-        "email": "",
+        "email": "post@cafelokka.no",
         "image_url": "images/bar-kafe/cafelokka.jpg",
         "phone": "+4740000974",
         "position": "63.433446  10.408608",
@@ -389,19 +360,9 @@
         "web": "http://cafelokka.no"
     },
     {
-        "adresse": "Erling Skakkes gate 22, Trondheim.",
-        "description": "Kafekjede med fire avdelinger i Trondheim, tilknyttet kjøpesentre. Denne kafeen ligger i samme kvartal som Trondheim Torg.",
-        "email": "",
-        "image_url": "images/bar-kafe/ordbarpikene-torvet.jpg",
-        "phone": "+4773929180",
-        "position": "63.429101  10.392961",
-        "title": "Jordbærpikene Trondheim Torg",
-        "web": "http://jordbarpikene.no/"
-    },
-    {
         "adresse": "Bispegata 9, Trondheim.",
         "description": "Café Ni Muser er en uformell kunstkafé og nærmeste nabo til Trondheim kunstmuseum.",
-        "email": "",
+        "email": "nimuser@nimuser.no",
         "image_url": "images/bar-kafe/ni-muser.jpg",
         "phone": "+4773536311",
         "position": "63.42745  10.393601",
@@ -421,7 +382,7 @@
     {
         "adresse": "Havnegata 1, Trondheim.",
         "description": "Broen Bar har flott utsikt til Nidelven og blomsterbrua som går over til Solsiden. Ligger like innenfor døren på Hotel Scandic Nidelven.",
-        "email": "",
+        "email": "rica.nidelven.hotel@rica.no",
         "image_url": "images/bar-kafe/bar-broen.jpg",
         "phone": "+4773568000",
         "position": "63.4353787  10.4057851",
@@ -443,7 +404,7 @@
         "description": "Bar med takterrasse og utsikt over byen, fjorden og Fosenalpene. Små og store sittegrupper gir en egen atmosfære. Skybar er en integrert del av Astrum Grill & Raw Bar. Ta heisen vest for inngangen i lobbyen opp til 9. etasje.",
         "email": "cl.trondheim@choice.no",
         "image_url": "images/bar-kafe/astrum-1.jpg",
-        "phone": "+47 73 92 55 00",
+        "phone": "+4773925500",
         "position": "63.4399252  10.4026694",
         "title": "Astrum Skybar",
         "web": "http://www.nordicchoicehotels.no/clarion/clarion-hotel-trondheim/"
@@ -451,7 +412,7 @@
     {
         "adresse": "Bispegata 11, Trondheim.",
         "description": "Café To Tårn er en kafe i Nidarosdomens besøkssenter, med sitteplasser ute og inne. Panoramautsikt mot vestfronten av katedralen, rosevinduet og de mange skulpturene.",
-        "email": "",
+        "email": "firmapost@bakeriet.no",
         "image_url": "images/bar-kafe/to-taarn.jpg",
         "phone": "+4772845990",
         "position": "63.427092  10.395534",
@@ -461,39 +422,19 @@
     {
         "adresse": "Fagerheim Allé 101",
         "description": "Sponhuset er et unikt eksempel i Trondheim bruk av håndkløyvd spon som ytterkledning. Kafeen ligger ved Ringvebukta, med forfatterboligen Adrianstuen som nærmeste nabo.",
-        "email": "",
+        "email": "post@sponhuset.no",
         "image_url": "images/turmal/sponhus1.jpg",
-        "phone": "+47 924 77 567",
+        "phone": "+4792477567",
         "position": "63.4534249  10.461592",
         "title": "Sponhuset",
         "web": "http://www.sponhuset.no"
     },
     {
-        "adresse": "Kongens gate 2, Trondheim.",
-        "description": "Kafeen Gjest Baardsen ligger i Trondheims gamle rådhus, som i dag huser Trondheim folkebibliotek. Gjest Baardsen var en av Norges mest legendariske forbrytere, og herjet landet tidlig på 1800-tallet. Sogningen var kjent for sin vinningskriminalitet og rømninger fra arresten. I 1817 var han innom Trondheim, og havnet etter hvert i Rådstuearresten, det vil si i kjelleren under det som i dag er kafeen. Baardsen klarte å rømme fra fangehullet i kjelleren, og karakteriserte det senere som det mest utrivelige stedet han noen gang hadde vært i forvaring. Fangehullet eksisterer fortsatt.",
-        "email": "",
-        "image_url": "images/bar-kafe/gjest-baardsen.jpg",
-        "phone": "+4773514280",
-        "position": "63.430359  10.401115",
-        "title": "Cafe Gjest Baardsen",
-        "web": ""
-    },
-    {
-        "adresse": "Dronningens gate 5, Trondheim.",
-        "description": "Britannia Hotels \"drop in\" restaurant tilbyr en variert lunsj og à la carte meny inspirert av det internasjonale kjøkken.",
-        "email": "",
-        "image_url": "images/bar-kafe/hjornet-britannia.jpg",
-        "phone": "+4773800800",
-        "position": "63.4317829  10.3990348",
-        "title": "Hjørnet Bar & Brasserie",
-        "web": "http://www.britannia.no/restaurant/hjornet/"
-    },
-    {
         "adresse": "TMV-kaia 3",
         "description": "Bar med burgerkonsept på Solsiden. Overkommelige porsjoner til overkommelige priser. Variert utvalg av brygg i baren.",
-        "email": "",
+        "email": "post@sotbar.no",
         "image_url": "images/bar-kafe/sot-bar.jpg",
-        "phone": "+47 458 31 524",
+        "phone": "+4745831524",
         "position": "63.434206  10.4129799",
         "title": "Sot Bar & Burger",
         "web": "http://www.sotbar.no"
@@ -501,29 +442,19 @@
     {
         "adresse": "Nedre Bakklandet 4",
         "description": "Antikvariatet Musikkafé & Bokbar er en todelt kafé/bar hvor det ofte holdes konserter og mange andre kulturelle arrangement. I kaféen er det en stor uteservering med utsikt mot Bakklandets gågate. Bokbaren på baksiden av bygget byr på utsikt ut mot elva, bybroen og domkirka.",
-        "email": "",
+        "email": "antikk.booking@gmail.com",
         "image_url": "images/bar-kafe/antikvariatet.jpg",
-        "phone": "+47 73 18 50 14",
+        "phone": "+4773185014",
         "position": "63.428421  10.4028767",
         "title": "Antikvariatet",
         "web": "http://https//www.facebook.com/antikvarene"
     },
     {
-        "adresse": "Folkvang, Spongdal.",
-        "description": "Golfkaféen holder til flotte moderne lokaler på Byneset med utsikt over Trondheims største golfpark. Åpen kun i golfsesongen (april-oktober).",
-        "email": "",
-        "image_url": "images/bar-kafe/dougies-19th.png",
-        "phone": "+47 72 59 51 51",
-        "position": "63.354817  10.157561",
-        "title": "Golfkafeen",
-        "web": "http://www.bynesetgolf.no/page.asp?MenyID=1022"
-    },
-    {
         "adresse": "Søndre gate 22, Trondheim. Inngang fra Carl Johans gate.",
         "description": "Bobbys Bar er et lite og intimt utested, en såkalt brun bar, med to etasjer i Carl Johans gate.",
-        "email": "",
+        "email": "post@bobbysbar.no",
         "image_url": "images/bar-kafe/Bobbys-bar.jpg",
-        "phone": "+47 928 03 055",
+        "phone": "+4792803055",
         "position": "63.433748  10.3999783",
         "title": "Bobbys Bar",
         "web": "http://bobbysbar.no"
@@ -541,9 +472,9 @@
     {
         "adresse": "Ilevollen 32B, Trondheim.",
         "description": "Lokal pub, kafe og kabaret vis-a-vis Ilaparken. Brainnstasjonen har en liten scene hvor små og store artister vil opptre fra tid til annen. Der er en gratisbokhylle hvor du kan komme og ta med deg en bok, eventuelt putte en i.",
-        "email": "",
+        "email": "post@ilabrainnstasjon.no",
         "image_url": "images/bar-kafe/ila-brainnstasjon.jpg",
-        "phone": "+47 489 55 036",
+        "phone": "+4748955036",
         "position": "63.4295901  10.3703238",
         "title": "Ila Brainnstasjon",
         "web": "http://www.ilabrainnstasjon.no/"
@@ -551,9 +482,9 @@
     {
         "adresse": "Nordre gate 4",
         "description": "Italiensk konditori og kafe, som bærer navn etter grunnlegger Antonio Somma. Samlokalisert med restauranten Ristorantino Italiano, som også er en del av samme familiebedrift.",
-        "email": "",
+        "email": "ristorantinoitaliano@gmail.com",
         "image_url": "images/bar-kafe/somma.jpg",
-        "phone": "+47 73 52 62 42",
+        "phone": "+4773526242",
         "position": "63.432178  10.397488",
         "title": "Somma Pasticceria",
         "web": "http://www.ristorantino.no/"
@@ -561,9 +492,9 @@
     {
         "adresse": "Fosenkaia 40, Trondheim.",
         "description": "På Skuret kan man oppleve kystkultur og aktivitetene til Kystlaget Trondhjem på nært hold. Vedlikehold og restaurering av fartøy foregår tett omkring kaféområdet og gir gjestene en særegen kafe opplevelse. Mulighet for skyss med fløttmannen (robåt) over Kanalen til Ravnkloa. Åpent i sommersesongen (mai - september).",
-        "email": "",
+        "email": "kafeskuret@gmail.com",
         "image_url": "images/bar-kafe/skuret.jpg",
-        "phone": "+47 944 29 898",
+        "phone": "+4794429898",
         "position": "63.43540587  10.3944082",
         "title": "Kafe Skuret",
         "web": "http://www.kystlaget-trh.no/kafe-skuret/"
@@ -571,9 +502,9 @@
     {
         "adresse": "Kongens gate 19, Trondheim. Inngang fra Ravelsveita.",
         "description": "Nede i kjelleren på Alma’s finner du baren Boxer. Her er det blant annet to shuffleboards og kickerbord. Se opp for turneringer, samt konsert-vorspiel og nachspiel. Inngang via uteserveringen.",
-        "email": "",
+        "email": "boxer@byscenen.no",
         "image_url": "images/bar-kafe/boxer.jpg",
-        "phone": "+47 907 50 336",
+        "phone": "+4790750336",
         "position": "63.43540587  10.3944082",
         "title": "Boxer Bar",
         "web": "http://byscenen.no/boxer/"
@@ -581,7 +512,7 @@
     {
         "adresse": "Olav Tryggvasons gate 5",
         "description": "Bar Moskus har velfylte hyller, ligger i det som en gang var Teaterhuset Avant Gardens første etasje og arrangerer ofte konserter.",
-        "email": "",
+        "email": "magnus@barmoskus.no",
         "image_url": "images/bar-kafe/moskus.jpg",
         "phone": "90045727",
         "position": "63.433243  10.401172",
@@ -593,7 +524,7 @@
         "description": "Mormors Stuer er et kafe- og vertshus som ble etablert i 1994. Huset er av gammel standard og skaper en egen atmosfære. Uteservering i bakgården. Det kan også nevnes at det en gang i tiden var barndomshjemmet til forfatter Fredrik Skagen.",
         "email": "mormorsstue@mac.com",
         "image_url": "images/bar-kafe/mormors-stuer.jpg",
-        "phone": "+47 73 52 20 22",
+        "phone": "+4773522022",
         "position": "63.4327  10.395128",
         "title": "Mormors stuer",
         "web": "http://mormor.no"
@@ -603,7 +534,7 @@
         "description": "Bar med dansegulv og scene. 25-årsgrense. Fire fine har sitt navn fra sangen \"Fire fine lænestola\", og som i sangen er beliggenheten på den såkalte \"beste tomta i byen\".  Baren har følgelig også fargerike og \"læne\" stola.",
         "email": "",
         "image_url": "images/bar-kafe/firefine.jpg",
-        "phone": "+47 400 04 647",
+        "phone": "+4740004647",
         "position": "63.433036 10.4071424",
         "title": "Fire Fine",
         "web": "https://www.facebook.com/firefinesolsiden/"
@@ -611,32 +542,12 @@
     {
         "adresse": "Nordre gate 21",
         "description": "En rendyrket cocktailbar som har ambisjon om å heve standarden på Trondheims barmiljø gjennom dyktige bartendere.",
-        "email": "",
+        "email": "post@enrausbar.no",
         "image_url": "images/bar-kafe/Raus.jpg",
         "phone": "+4748327200",
         "position": "63.4339867  10.3974255",
         "title": "Raus",
         "web": "http://www.enrausbar.no"
-    },
-    {
-        "adresse": "Nedre Bakklandet, 20, Trondheim.",
-        "description": "Taps er et ølsted på kveldstid (har eget mikrobryggeri) og kafe på dagtid (under navnet Soil).",
-        "email": "",
-        "image_url": "images/bar-kafe/taps.jpg",
-        "phone": "+47 476 36 504",
-        "position": "63.4292815  10.4036872",
-        "title": "Taps",
-        "web": "https://www.facebook.com/TapsTrondheim"
-    },
-    {
-        "adresse": "Erling Skakkes gate 47A, Trondheim (inngang fra Suhms gate).",
-        "description": "Café Magasinet finner du i Suhmhuset på NTNU Vitenskapsmuseet. Middelalderutstilling i loftsetasjen. Sommerstid er det uteservering i den solrike bakgården.",
-        "email": "",
-        "image_url": "images/bar-kafe/cafe-magasinet.jpg",
-        "phone": "+4773592168",
-        "position": "63.428378  10.386131",
-        "title": "Café Magasinet",
-        "web": "http://www.bakeriet.no/node/25"
     },
     {
         "adresse": "TMV-kaia 7, Trondheim.",
@@ -651,7 +562,7 @@
     {
         "adresse": "Kjøpmannsgata 7, Trondheim.",
         "description": "Havfruen Sjømatrestaurant ligger i et gammelt og ærverdig bryggehus ved Nidelven og Gamle Bybro. På menyen står norsk fisk og sjømat, men også et sesongrelatert alternativ til de som foretrekker kjøtt.",
-        "email": "",
+        "email": "post@havfruen.no",
         "image_url": "images/restauranter/Havfruen.jpg",
         "phone": "+4773874070",
         "position": "63.4289027 10.4011381999",
@@ -661,9 +572,9 @@
     {
         "adresse": "Munkegata 39, Trondheim.",
         "description": "Sushirestaurant rett ved byens fiskemarked i Ravnkloa, med en rikholdig meny av sushi, maki, sashimi og tempura. Også egen take away meny. Enkel barnemeny. Sushi Bar har også en restaurant i Innherredsveien ved Solsiden.",
-        "email": "",
+        "email": "post@sushibar.no",
         "image_url": "images/restauranter/sushibar-ravnkloa.jpg",
-        "phone": "+47 73 52 10 20",
+        "phone": "+4773521020",
         "position": "63.4335477 10.39376590",
         "title": "Sushi Bar, Ravnkloa",
         "web": "http://www.sushibar.no/"
@@ -671,9 +582,9 @@
     {
         "adresse": "Innherredsveien 14, Trondheim.",
         "description": "Sushirestaurant i Innherredsveien ved Solsiden, med en rikholdig meny av sushi, maki, sashimi og tempura. Også egen take away meny. Enkel barnemeny. Sushi Bar har også en restaurant ved Ravnkloa og på Heimdal.",
-        "email": "",
+        "email": "post@sushibar.no",
         "image_url": "images/restauranter/Sushi-Bar-Innherredsvn.jpg",
-        "phone": "+47 73 52 10 20",
+        "phone": "+4773521020",
         "position": "63.4333464  10.4109657 ",
         "title": "Sushi Bar, Solsiden",
         "web": "http://www.sushibar.no/"
@@ -681,9 +592,9 @@
     {
         "adresse": "Munkegata 39, Trondheim.",
         "description": "Sushirestaurant på Heimdal med en rikholdig meny av sushi, maki, sashimi og tempura. Også egen take away meny. Enkel barnemeny. Sushi Bar har også en restaurant ved Ravnkloa og på Solsiden.",
-        "email": "",
+        "email": "post@sushibar.no",
         "image_url": "",
-        "phone": "+47 73 52 10 20",
+        "phone": "+4773521020",
         "position": "63.351614 10.3559313",
         "title": "Sushi Bar, Heimdal",
         "web": "http://www.sushibar.no/"
@@ -693,7 +604,7 @@
         "description": "Egon Solsiden holder til i den populære bar og restaurantrekka på Nedre Elvehavn. Egon er en trøndersk restaurantkjede, og menyen varierer fra pizza og burger til indrefilet og fiskeretter.",
         "email": "solsiden@egon.no",
         "image_url": "images/restauranter/egon-solsiden.jpg",
-        "phone": " \t+4773926701",
+        "phone": "+4773926701",
         "position": "63.434704 10.4115970",
         "title": "Egon Solsiden",
         "web": "http://www.egon.no/"
@@ -703,7 +614,7 @@
         "description": "Egon Prinsen holder til i lokaler ved bussterminalen i Prinsenkrysset. Egon er en trøndersk restaurantkjede, og menyen varierer fra pizza og burger til indrefilet og fiskeretter.",
         "email": "prinsen@egon.no",
         "image_url": "images/restauranter/egon-prinsen.jpg",
-        "phone": "+47 73 80 70 90",
+        "phone": "+4773807090",
         "position": "63.43077 10.3917099999",
         "title": "Egon Prinsen",
         "web": "http://www.egon.no"
@@ -713,7 +624,7 @@
         "description": "Egon Søndre ligger på hjørnet mellom Cicignons plass og Søndre gate. De mange gulvnivåene inne i bygget gir restauranten en spesiell atmosfære. Egon er en trøndersk restaurantkjede, og menyen varierer fra pizza og burger til indrefilet og fiskeretter.",
         "email": "trondheim@egon.no",
         "image_url": "images/restauranter/egon-sondre.jpg",
-        "phone": " \t+47 73 51 79 75",
+        "phone": "+4773517975",
         "position": "63.432727 10.4005200",
         "title": "Egon Søndre",
         "web": "http://www.egon.no"
@@ -721,7 +632,7 @@
     {
         "adresse": "Kjøpmannsgata 57, Trondheim.",
         "description": "Italienskinspirert restaurant i rustikke omgivelser i en av de gamle bryggene ved Nidelva nær Bakke bru.",
-        "email": "",
+        "email": "post@aisuma.no",
         "image_url": "images/restauranter/aisuma.jpg",
         "phone": "+4773549271",
         "position": "63.4323265 10.4037405",
@@ -729,31 +640,11 @@
         "web": "http://www.aisuma.no/"
     },
     {
-        "adresse": "Fjordgata 7, Trondheim.",
-        "description": "Restaurant og gastropub med lokal mat og drikke fra eget bryggeri. Maten er øl-fokusert, med sesongbaserte råvarer.",
-        "email": "",
-        "image_url": "images/restauranter/brygghus9.jpg",
-        "phone": "+4745050600",
-        "position": "63.4346387 10.40222470",
-        "title": "Brygghus 9",
-        "web": "https://www.facebook.com/brygghus9"
-    },
-    {
-        "adresse": "Erling Skakkes gate 45, Trondheim.",
-        "description": "Liten intim restaurant vis-a-vis Trøndelag Teater. Moderne kjøkken inspirert av det norske, franske og italienske kjøkken. Fast meny med fem retter, som varierer fra uke til uke.",
-        "email": "",
-        "image_url": "images/restauranter/emilies.jpg",
-        "phone": "+47 73 92 96 41",
-        "position": "63.4290509 10.3910935999",
-        "title": "Emilies",
-        "web": "http://www.emilies.no"
-    },
-    {
         "adresse": "Kongens gate 30 (inngang fra Prinsens gate)",
         "description": "Moderne kjøkken inspirert av det norske, franske og amerikanske kjøkken. A la carte-meny eller ukens femretters med tilhørende drikkemeny. Chambre separe med mulighet for å sitte litt for seg selv. Cocktailbar med egen meny og småretter. Tidligere var ELD og Emilies separate restauranter i Midtbyen, men slo seg sammen høsten 2016.",
-        "email": "",
+        "email": "post@eldrestaurant.no",
         "image_url": "images/restauranter/eld.jpg",
-        "phone": " +47 479 31 000",
+        "phone": "+4747931000",
         "position": "63.431199 10.391750",
         "title": "Emilies ELD Restaurant & Bar",
         "web": "http://emilieseld.no/"
@@ -761,9 +652,9 @@
     {
         "adresse": "Carl Johans gate 5, Trondheim.",
         "description": "Gourmetrestaurant med meny inspirert av sesongbaserte lokale råvarer i kombinasjon med mattradisjonene fra Middelhavsområdene.",
-        "email": "",
+        "email": "post@2rok.no",
         "image_url": "images/restauranter/torom.jpg",
-        "phone": "mailto:post@2rok.no",
+        "phone": "+4773568900",
         "position": "63.4338085 10.3987839",
         "title": "To Rom og Kjøkken",
         "web": "http://www.toromogkjokken.no"
@@ -771,7 +662,7 @@
     {
         "adresse": "Strandveien 25A, Trondheim.",
         "description": "Ramp er en bydelspub på Svartlamon. Bydelen er kjent for alternativ livsstil og bohemkultur. Puben er innredet for å skape en 50-talls atmosfære. Navnet Ramp stammer fra uttrykket \"lamoramp\" som tidligere gjerne ble brukt om unge mennesker fra Lademoen/Svartlamoen, som ikke oppførte seg i henhold til normer og regler i høyere samfunsklasser.",
-        "email": "",
+        "email": "lamoramp@lamoramp.net",
         "image_url": "images/restauranter/ramp.jpg",
         "phone": "+4773518020",
         "position": "63.4380061 10.4216652",
@@ -781,29 +672,19 @@
     {
         "adresse": "Nordre gate 4, Trondheim.",
         "description": "Italiensk restaurant og familiebedrift. Klassisk italiensk meny med retter tilberedt av italienere. Restauranten ligger i andre etasje, over bedriftens konditori.",
-        "email": "",
+        "email": "ristorantinoitaliano@gmail.com",
         "image_url": "images/restauranter/Ristorantino.jpg",
-        "phone": "+47%2073%2052%2062%2042",
+        "phone": "+4773526242",
         "position": "63.4310048 10.3974475999",
         "title": "Ristorantino Italiano",
         "web": "http://ristorantino.no"
-    },
-    {
-        "adresse": "Dronningens gate 26, Trondheim (inngang fra Jomfrugata).",
-        "description": "En rendyrket sushirestaurant i to etasjer med både lunsjretter, sushi a la carte og kokkens ferdigkomponerte måltider (3-6 retter).",
-        "email": "",
-        "image_url": "images/restauranter/kyoto.jpg",
-        "phone": "+47 73 50 13 00",
-        "position": "63.432157 10.395905999",
-        "title": "Kyoto",
-        "web": "http://www.kyoto.no"
     },
     {
         "adresse": "Kongens gate 32, Trondheim.",
         "description": "Tradisjonell italiensk restaurant, beliggende like ved bussterminalen i Prinsenkrysset. Uteservering i sommersesongen.",
         "email": "",
         "image_url": "images/restauranter/napoli.jpg",
-        "phone": "+47 73 50 25 91",
+        "phone": "+4773502591",
         "position": "63.4307690073 10.3906048963",
         "title": "Napoli",
         "web": "https://www.facebook.com/Restaurant-Napoli-133034716743637/"
@@ -811,9 +692,9 @@
     {
         "adresse": "Ravelsveita 6",
         "description": "Thairestaurant i sjarmerende miljø, der thailandsk interiør møter trøndersk trehus i Midtbyen. Ligger i veita vis-a-vis Mikrobryggeriet. Fast meny som omfatter mange klassiske thailandske retter.",
-        "email": "",
+        "email": "post@benja-siam.no",
         "image_url": "images/restauranter/benja-siam.jpg",
-        "phone": "+47 73 53 38 88",
+        "phone": "+4773533888",
         "position": "63.431468007358376  10.392661234254433",
         "title": "Benja Siam",
         "web": "http://www.benja-siam.no/"
@@ -823,27 +704,17 @@
         "description": "Fra hotellrestauranten Astrum har man utsikt over byen, fjorden og Fosenalpene. På menyen møter det klassiske nordiske kjøkkenet rustikke amerikanske tradisjoner og også sofistikerte asiatiske matretter. Samlokalisert med Raw Bar. Ta heis fra resepsjonen og opp i 9. etasje.",
         "email": "astrum.cl.trondheim@choice.no",
         "image_url": "images/restauranter/astrum-2.jpg",
-        "phone": "+47 46 89 20 14",
+        "phone": "+4746892014",
         "position": "63.4400163863 10.402390499099",
         "title": "Astrum Grill & Raw Bar",
         "web": "https://www.nordicchoicehotels.com/clarion/clarion-hotel-trondheim/featured-amenities/restaurant/"
     },
     {
-        "adresse": "Fjordgata 17, Trondheim.",
-        "description": "Uformell chilensk restaurant i Fjordgata, oppkalt etter et av eierens etternavn. Variert meny med alt fra pizza til latinamerikanske retter.",
-        "email": "",
-        "image_url": "images/restauranter/matute.jpg",
-        "phone": "+4773521716",
-        "position": "63.43466 10.4004640",
-        "title": "Matute",
-        "web": "https://www.facebook.com/Matute-Restaurant-og-Pizzeria-249985855066202/"
-    },
-    {
         "adresse": "Munkegata 41",
         "description": "Biffrestaurant i gammel og ærverdig trebygning med utsikt over byens fiskemarked Ravnkloa. Uteservering om sommeren. Big Horn Ravnkloa er del av en norsk restaurantkjede.",
-        "email": "",
+        "email": "trondheim@bighorn.no",
         "image_url": "images/restauranter/big-horn.jpg",
-        "phone": "+47 73 50 94 90",
+        "phone": "+4773509490",
         "position": "63.4337328 10.3936547",
         "title": "Big Horn Steak House",
         "web": "https://bighorn.no/restaurant/trondheim/?gclid=CjwKCAjwtYXmBRAOEiwAYsyl3F-0q1qbEXtZKDNgn_TtqoZdNtaMJCXqjHIc4P3k-zX1h4K9KTmN-RoCbVgQAvD_BwE"
@@ -851,7 +722,7 @@
     {
         "adresse": "Kjøpmannsgata 40, Trondheim",
         "description": "Bakgården er en bar, lunsj- og tapasrestaurant i Kjøpmannsgata. Som det framgår av navnet, ligger den gjemt inne i en bakgård. Meny inspirert av spanske mattradisjoner.",
-        "email": "",
+        "email": "firmapost@bakgaarden.com",
         "image_url": "images/restauranter/Bakgården.jpg",
         "phone": "+4745222488",
         "position": "63.43275 10.4032584999",
@@ -859,21 +730,11 @@
         "web": "http://bakgaarden.com/"
     },
     {
-        "adresse": "Carl Johans gate 8, Trondheim.",
-        "description": "Sabrura Lounge Midtbyen er en sushirestaurant i de tidligere lokalene til Kos Bar & Lounge. Sabrura Sticks & Sushi serverer sushi, grillspyd og salater med en norsk vri. Lokalet er designet av Helene Hennie, som ble kåret til verdens beste interiørdesigner i 2007. ",
-        "email": "",
-        "image_url": "images/restauranter/kos.jpg",
-        "phone": "",
-        "position": "63.4339501 10.39834759999",
-        "title": "Sabrura Lounge Midtbyen",
-        "web": "http://sabrurasushi.no/"
-    },
-    {
         "adresse": "Olav Tryggvasons gate 20, Trondheim.",
         "description": "Kinesisk restaurant med retter fra provinsene Szechuan og Kanton. Variert meny preget av Østens krydder og friske grønnsaker. Muligheter for både take away, levering på døra og catering.",
-        "email": "",
+        "email": "post@szechuan.no",
         "image_url": "images/restauranter/szechuan.jpg",
-        "phone": "+47 73 52 28 67",
+        "phone": "+4773522867",
         "position": "63.4333529 10.39846579999",
         "title": "Szechuan Restaurant",
         "web": "http://www.szechuan.no/"
@@ -881,22 +742,12 @@
     {
         "adresse": "Repslagerveita 2, Trondheim.",
         "description": "Meny av retter med opprinnelse fra Vietnam, Thailand og Kina, basert på gode råvarer og asiatiske urter og krydder. Signaturretten deres er sprøstekt and.",
-        "email": "",
+        "email": "postmaster@phuyen.no",
         "image_url": "images/restauranter/phu-yen.jpg",
-        "phone": "+47 73 52 99 50",
+        "phone": "+4773529950",
         "position": "63.4300752912 10.3889379651",
         "title": "Phu Yen",
         "web": "http://phuyen.no/"
-    },
-    {
-        "adresse": "Olav Tryggvasons gate 33, Trondheim.",
-        "description": "Bar, lunsjbar og restaurant i Olav Tryggvasons gate, med variert meny av internasjonale retter. Uteservering på sommerstid i veita bak restauranten.",
-        "email": "",
-        "image_url": "images/restauranter/Nattergalen.jpg",
-        "phone": "+4773504500",
-        "position": "63.43315342599008  10.395882295106503",
-        "title": "Nattergalen Bar & Kjøkken",
-        "web": "http://nattergalenbar.no"
     },
     {
         "adresse": "Dronningens gate 5, Trondheim.",
@@ -911,7 +762,7 @@
     {
         "adresse": "Erling Skakkes gate 39, Trondheim.",
         "description": "Lunsjbar med vegetarkost og takeaway. Matfilosofien er at måltidene våre skal være balanserte, med like deler proteiner, fiber og trege karbohydrater. Råvarene som brukes er lokale, kortreiste og primært økologiske.",
-        "email": "",
+        "email": "per@persilleriet.no",
         "image_url": "images/restauranter/persilleriet.jpg",
         "phone": "+4773606014",
         "position": "63.4289839 10.39166939999",
@@ -923,7 +774,7 @@
         "description": "Vertshus bygd 1739. Rikholdig meny med blant annet tradisjonelle retter som hjemmelagde kjøttkaker, rømmegrøt og reinsdyrfilet. Opprinnelig stod Tavern på Brattøra i Trondheim sentrum, men ble flyttet til Trøndelag Folkemuseum i 1946. Bygningen ligger utenfor selve museumsområdet.",
         "email": "tavern@kontrastcatering.no",
         "image_url": "images/restauranter/tavern.jpg",
-        "phone": "+47 454 88 888",
+        "phone": "+4745488888",
         "position": "63.422091 10.3576736999",
         "title": "Tavern Sverresborg",
         "web": "http://vertshusettavern.no/"
@@ -931,7 +782,7 @@
     {
         "adresse": "Bakkegata 2, Trondheim.",
         "description": "Tyrkisk kebabrestaurant på Møllenberg med falafel, döner, burger, pizza og annen hurtigmat på menyen. Åpent til langt på natt i helgene.",
-        "email": "",
+        "email": "oskapizza@gmail.com",
         "image_url": "images/restauranter/Oska.jpg",
         "phone": "+4773531940",
         "position": "63.4318777 10.4087039999",
@@ -941,9 +792,9 @@
     {
         "adresse": "Havnegata 1-4, Trondheim.",
         "description": "Restaurant Nidelven er en hotellrestaurant kjent for sin gode frokost (har vunnet utmerkelser for landets beste hotellfrokost). Fra middagsmenyen kan man selv velger hvilke og antallet retter man ønsker. Maten i restauranten er inspirert av internasjonale trender innen kokkekunst, og bruk av lokale råvarer.",
-        "email": "",
+        "email": "nidelven@scandichotels.com",
         "image_url": "images/restauranter/restaurantnidelven.jpg",
-        "phone": "+47 73 56 80 00",
+        "phone": "+4773568000",
         "position": "63.4365663 10.4070758999",
         "title": "Restaurant Nidelven",
         "web": "http://www.scandichotels.no/Hotels/Norge/Trondheim/Nidelven/"
@@ -951,9 +802,9 @@
     {
         "adresse": "Lianvegen 36, Trondheim.",
         "description": "Ved enden av Gråkallbanen finner du gamle ærverdige Lian restaurant. Lokalene ble tatt i bruk som serveringssted allerede på 1930-tallet og har siden vært et av byens mest populære utfartsmål. Åpent på ettermiddager onsdag og søndag, og ellers for arrangement, møter og selskap.",
-        "email": "",
+        "email": "kontakt@lianrestaurant.no",
         "image_url": "images/restauranter/lian.jpg",
-        "phone": "+47 72 56 51 10",
+        "phone": "+4772565110",
         "position": "63.402505 10.3106219999",
         "title": "Lian Restaurant",
         "web": "https://www.facebook.com/LianRestaurant/"
@@ -973,20 +824,10 @@
         "description": "Kvilhaugen Gård ble bygget i 1820 og er i dag en av Trondheims største restauranthus med 450 sitteplasser. Gården ligger over øvre Singsaker og har en flott utsikt over byen. Kjøkkenet kombinerer god gammeldags kokkekunst med nåtidens smaker.",
         "email": "post@kvilhaugen.no",
         "image_url": "images/restauranter/kvilhaug_1.jpg",
-        "phone": "+47 73 600 630",
+        "phone": "+4773600630",
         "position": "63.423098 10.423085099",
         "title": "Kvilhaugen Gård",
         "web": "http://kvilhaugen.no"
-    },
-    {
-        "adresse": "Nordre gate 24, Trondheim.",
-        "description": "Tasting restaurant og bar ligger i tilknytning til P-Hotels i Nordre gate. Variert meny basert på lokale råvarer og internasjonal inspirasjon.",
-        "email": "",
-        "image_url": "images/restauranter/tasting.jpg",
-        "phone": "+4773802350",
-        "position": "63.4338182 10.3968546999",
-        "title": "Tasting",
-        "web": "http://www.tasting.no"
     },
     {
         "adresse": "Jonsvannsveien 142",
@@ -997,16 +838,6 @@
         "position": "63.4105008 10.4362919999",
         "title": "Domino's Pizza Moholt",
         "web": "https://www.dominos.no/stores/moholt.php"
-    },
-    {
-        "adresse": "Haakon VIIs gate 11, Trondheim.",
-        "description": "Pizzarestaurant ved City Lade på Ladesletta. Dolly Dimple's er en norsk restaurantkjede med take away-tjeneste. I Trondheim er det to avdelinger til, på Moholt og på Lerkendal.",
-        "email": "",
-        "image_url": "",
-        "phone": "04440",
-        "position": "63.4432489011 10.45026568989",
-        "title": "Dolly Dimple's Lade",
-        "web": "http://www.dolly.no"
     },
     {
         "adresse": "Klæbuveien 125",
@@ -1021,9 +852,9 @@
     {
         "adresse": "Beddingen 14, Trondheim.",
         "description": "Italiensk restaurant og bar på Solsiden. Una har hovedfokus på pizza, men menyen inneholder også et godt utvalg fra det italienske kjøkken (pasta, kjøtt og fisk). God plass både ute og inne.",
-        "email": "",
+        "email": "post@unapizzeria.no",
         "image_url": "images/restauranter/una-pizzeria.jpg",
-        "phone": "+47 4000 7003",
+        "phone": "+4740007003",
         "position": "63.4351659735 10.410270829",
         "title": "Una Pizzeria e Bar",
         "web": "http://unapizzeria.no/"
@@ -1033,7 +864,7 @@
         "description": "Pizzarestaurant i en av de gamle bryggene ved Nidelva. Peppes er en norsk pizzarestaurantkjede, og de har også en restaurant på Heimdal.",
         "email": "",
         "image_url": "images/restauranter/peppes-pizza.jpg",
-        "phone": "+47 22 22 55 55",
+        "phone": "+4722225555",
         "position": "63.4299865 10.4018455",
         "title": "Peppes Pizza Trondheim",
         "web": "https://www.peppes.no/desktop/pizzarestauranter/peppes-pizza-trondheim-15"
@@ -1043,7 +874,7 @@
         "description": "Pizzarestaurant i Heimdal sentrum. Peppes er en norsk pizzarestaurantkjede, og de har også en restaurant i Midtbyen ved Nidelva.",
         "email": "",
         "image_url": "images/restauranter/peppes-heimdal.jpg",
-        "phone": "+47 22 22 55 55",
+        "phone": "+4722225555",
         "position": "63.350343 10.3560989",
         "title": "Peppes Pizza Heimdal",
         "web": "https://www.peppes.no/desktop/pizzarestauranter/peppes-pizza-heimdal-37"
@@ -1053,7 +884,7 @@
         "description": "Pizzeria på Møllenberg, ikke langt fra Solsiden. Pizzaen her ble kåret til byens beste fire år på rad, før restauranten brant ned. Milano har nå startet opp igjen, og serverer igjen gode pizzaer.",
         "email": "",
         "image_url": "images/restauranter/milano.jpg",
-        "phone": "+47 73 50 49 50",
+        "phone": "+4773504950",
         "position": "63.4309084 10.41415559999",
         "title": "Milano Pizzeria",
         "web": "http://milanomollenberg.no/"
@@ -1061,9 +892,9 @@
     {
         "adresse": "Kongsgårdsgata 1, Trondheim.",
         "description": "Vertshus i historiske lokaler, like ved Erkebispegården og Nidarosdomen. Hovedbygget er fra 1700-tallet og skaper en egen atmosfære. A la carte meny og ferdige menyer og lunsjbuffet.",
-        "email": "",
+        "email": "vertgren@online.no",
         "image_url": "images/restauranter/grenaderen.jpg",
-        "phone": "+47 73 51 66 80",
+        "phone": "+4773516680",
         "position": "63.42549 10.395072",
         "title": "Vertshuset Grenaderen",
         "web": "http://www.grenaderen.no"
@@ -1071,32 +902,12 @@
     {
         "adresse": "Nedre Bakklandet 5, Trondheim.",
         "description": "Bar og restaurant i gammelt trehus på idylliske Bakklandet. Moderne inspirert kjøkken med lunsjmeny, a la carte og kokkens sesongbaserte femrettersmeny.",
-        "email": "",
+        "email": "post@restaurantkalas.no",
         "image_url": "images/restauranter/kalas-canasta.jpg",
-        "phone": "+47 928 52 527",
+        "phone": "+4792852527",
         "position": "63.4283478 10.4031746",
         "title": "Kalas & Canasta",
         "web": "http://www.kalasogcanasta.no"
-    },
-    {
-        "adresse": "Ulavegen 5, Trondheim.",
-        "description": "Bydelsrestaurant i det gamle Persaunet militærleir. Tregården fører en internasjonal meny, er kjent for god pizza, ble sommeren 2014 rangert med høyeste score på TripAdvisor blant Trondheims restauranter.",
-        "email": "",
-        "image_url": "images/restauranter/tregarden-restaurant2.jpg",
-        "phone": "+47 73 82 64 00",
-        "position": "63.4311509232 10.44345243",
-        "title": "Tregården Restaurant",
-        "web": "http://www.tregaarden.com/"
-    },
-    {
-        "adresse": "Kongens gate 14B, Trondheim.",
-        "description": "Sjømatrestaurant med lokale ingredienser i Sommergården ved Torvet. Norsk mat og drikke i et norsk miljø. Restauranten er oppkalt etter Ågot Lian fra Fosen, som jobbet med fiskemottak og fiskematproduksjon, og navnet er videreført av etterkommerne hennes som etablerte denne restauranten.",
-        "email": "",
-        "image_url": "images/restauranter/agot-lian.jpg",
-        "phone": "+47 73 60 41 45",
-        "position": "63.4305366856 10.396385033",
-        "title": "Ågot Lian",
-        "web": "http://www.agotlian.no"
     },
     {
         "adresse": "Kongens gate 19, Trondheim.",
@@ -1117,16 +928,6 @@
         "position": "63.3503084 10.3525981999",
         "title": "Fellini",
         "web": "http://fellini.no"
-    },
-    {
-        "adresse": "Munkegata 64",
-        "description": "Taj Tandoori er en familierestaurant som ble stiftet i 1989. Her serveres maten atskilt slik at flere kan dele maten i mellom seg.",
-        "email": "Supa-r@online.no",
-        "image_url": "images/restauranter/taj-tandori-ravnkloa.jpg",
-        "phone": "73517251",
-        "position": "63.433695 10.392748",
-        "title": "Taj Tandoori",
-        "web": ""
     },
     {
         "adresse": "Kongens gate 42, Trondheim.",
@@ -1213,7 +1014,7 @@
         "description": "Restaurantens konsept er at nord møter øst og blir Nordøst, i det norske råvarer kombineres med Østens smaker.",
         "email": "post@nordoest.no",
         "image_url": "images/restauranter/nordost.jpg",
-        "phone": "+47 482 89 482",
+        "phone": "+47 48289482",
         "position": "63.43491 10.410879",
         "title": "Nordøst",
         "web": "http://nordoest.no/"
@@ -1247,16 +1048,6 @@
         "position": "63.4272828 10.41089499999",
         "title": "Kommandanten",
         "web": "http://festningenservering.no/"
-    },
-    {
-        "adresse": "Kongens gate 30, Trondheim.",
-        "description": "Mathallen har trøndersk og norsk mat og drikke for salg og servering. Stedet har en restaurant, en kaffebar, et ølutsalg og utsalg av kortreiste råvarer (blant annet grønnsaker, ost, kjøtt, fisk, skalldyr og kornprodukter fra lokale produsenter).",
-        "email": "anne@mathalltrondheim.no",
-        "image_url": "images/restauranter/mathallen.jpg",
-        "phone": "",
-        "position": "63.431018 10.391787",
-        "title": "Mathallen",
-        "web": "http://www.mathalltrondheim.no/"
     },
     {
         "adresse": "Olav Tryggvasons gate 40, Trondheim.",
@@ -1303,15 +1094,15 @@
         "description": "Selma pizza og bar serverer økologisk pizza i vedfyrt steinovn. De har også et bredt utvalg på tapp.",
         "email": "",
         "image_url": "images/restauranter/selma.jpg",
-        "phone": "http://selmabar.no/",
+        "phone": "",
         "position": "63.434499 10.4121149999",
         "title": "Selma pizza og bar ",
-        "web": ""
+        "web": "http://selmabar.no/"
     },
     {
         "adresse": "Carl Johans gate 3",
         "description": "Diskoteket er en ølbar og nattklubb i Carl Johans gate. Dansegulv og DJ flere kvelder i uka.",
-        "email": "",
+        "email": "diskoteketbar@gmail.com",
         "image_url": "images/bar-kafe/diskoteket.jpg",
         "phone": "40001744",
         "position": "63.43386788203689  10.399167308628876",
@@ -1329,32 +1120,13 @@
         "web": "https://www.ecdahls.no/pub-og-kjokken/"
     },
     {
+        "adresse": "",
         "description": "Ladekaia er et uformelt serveringssted med beliggenhet like ved den populære Ladestien. De serverer småretter, smørbrød og hvetebakst. Ladekaia har skjenkebevilling for øl og vin.",
         "email": "",
         "image_url": "images/restauranter/Ladekaia.jpg",
         "phone": "46973944",
         "position": "63.45716301233908  10.447038864587398",
         "title": "Ladekaia",
-        "web": ""
-    },
-    {
-        "adresse": "TMV-kaia 13, Trondheim.",
-        "description": "Selma pizza og bar serverer håndverkspizza bakt i vedfyrt steinovn, og et bredt utvalg av drikke fra tapp.",
-        "email": "post@selmabar.no",
-        "image_url": "images/restauranter/selma.jpg",
-        "phone": "",
-        "position": "63.434499 10.4121149999",
-        "title": "Selma Pizza og Bar",
-        "web": "http://selmabar.no/"
-    },
-    {
-        "adresse": "Singsakerbakken 2D, 7030 Trondheim.",
-        "description": "Spisested med kinesisk kjøkken og takeaway, like i nærheten av Studentersamfundet.",
-        "email": "",
-        "image_url": "images/restauranter/Nyhaven.jpg",
-        "phone": "",
-        "position": "63.42208408370242  10.399540148410097",
-        "title": "Nyhaven restaurant",
         "web": ""
     },
     {
@@ -1376,45 +1148,6 @@
         "position": "63.43578352424777  10.39708055001529",
         "title": "Troll Restaurant",
         "web": "http://www.trollrestaurant.no"
-    },
-    {
-        "description": "Trondheims eneste restaurantbåt, M/S Bjørnvåg, ligger fortøyd ved Brattørkaia. Båten ble bygget som passasjerferge, men huser nå en restaurant i salongen. Menyen bygger på lokale råvarer. Arrangerer turer på fjorden i sommerhalvåret. Servering kun på bestilling.",
-        "email": "post@bjornvag.no",
-        "image_url": "images/restauranter/ms-bjornvag.jpg",
-        "phone": "",
-        "position": "",
-        "title": "M/S Bjørnvåg",
-        "web": "http://www.bjornvag.no/"
-    },
-    {
-        "adresse": "Nedre Bakklandet 75, Trondheim.",
-        "description": "Mat fra Hagen er en vegetar- og veganrestaurant i enkle lokaler. Meny bygges opp rundt lokale og sesongbaserte råvarer. Hagen har også en avdeling i Midtbyen.",
-        "email": "post@matfrahagen.no",
-        "image_url": "images/restauranter/matfrahagen.jpg",
-        "phone": "",
-        "position": "63.431493843362475  10.407342681706268",
-        "title": "Mat fra Hagen Bakklandet",
-        "web": "http://www.matfrahagen.no/"
-    },
-    {
-        "adresse": "Thomas Angells gate 14, Trondheim.",
-        "description": "Mat fra Hagen er en vegetar- og veganrestaurant i enkle lokaler. Meny bygges opp rundt lokale og sesongbaserte råvarer. Hagen har også en avdeling på Bakklandet.",
-        "email": "post@matfrahagen.no",
-        "image_url": "",
-        "phone": "",
-        "position": "63.43278705304633  10.39830900174411",
-        "title": "Mat fra Hagen Midtbyen",
-        "web": "http://www.matfrahagen.no/"
-    },
-    {
-        "adresse": "Nedre Bakklandet 75, Trondheim.",
-        "description": "Mat fra Hagen er en vegetar- og veganrestaurant i enkle lokaler. Meny bygges opp rundt lokale og sesongbaserte råvarer. Hagen har også avdelinger i Midtbyen og i Ilsvika.",
-        "email": "post@matfrahagen.no",
-        "image_url": "images/restauranter/matfrahagen.jpg",
-        "phone": "",
-        "position": "63.431493843362475  10.407342681706268",
-        "title": "Mat fra Hagen Bakklandet (3)",
-        "web": "http://www.matfrahagen.no/"
     },
     {
         "adresse": "Øvre Bakklandet 66",
@@ -1441,7 +1174,7 @@
         "description": "Pub og bryggeri i stor, 300 år gammel hvelvkjeller under Residence-bygget ved Torvet. Lokale som strekker seg fra inngangen i Munkegata over til restauranten Frati. De to stedene har samme eiere, og tilbyr brygg fra samme produksjon. Kun glassvegger skiller bryggeriet fra restaurant og pub, slik at besøkende kan se hva som skjer i bryggeprosessen.",
         "email": "post@oxtap.no",
         "image_url": "images/bar-kafe/ox.jpg",
-        "phone": "+47 458 48 480",
+        "phone": "+4745848480",
         "position": "63.430998 10.394183",
         "title": "Øx Tap Room",
         "web": "http://www.oxtap.no/"
@@ -1457,6 +1190,7 @@
         "web": "http://sabrurasushi.no/"
     },
     {
+        "adresse": "",
         "description": "Mesob er en eritreisk - etiopisk restaurant, etablert i 2016 i de tidligere lokalene til Taj Tandoori. Beliggenhet i Ravnkloa.",
         "email": "",
         "image_url": "images/restauranter/mesob.jpg",
@@ -1473,16 +1207,6 @@
         "phone": "",
         "position": "63.434551 10.4141710",
         "title": "Sushime",
-        "web": ""
-    },
-    {
-        "adresse": "Nordre gate 11, Trondheim.",
-        "description": "Amerikansk restaurantkjede, med uteservering og bakgårdsterrasse (Borkeplassen). Forkortelsen TGI står for \"Thank Goodness, It's (Friday's)\".",
-        "email": "",
-        "image_url": "images/restauranter/tgi-fridays.jpg",
-        "phone": "",
-        "position": "63.432471 10.397634",
-        "title": "TGI Friday's",
         "web": ""
     },
     {
@@ -1524,15 +1248,6 @@
         "position": "",
         "title": " Café Le Frère",
         "web": "https://www.facebook.com/cafelefrere"
-    },
-    {
-        "description": "Uformelt spisested (kafe, restaurant og bar) ytterst på Grillstad Marina, like ved Ladestien (promenaden langs fjæra på Ranheim). Land & Strand satser på et folkelig preg, i kombinasjon med et nyskapende kjøkken. Samme drivere som hos Folk & Fe på ved Gamle Bybro på Bakklandet.",
-        "email": "",
-        "image_url": "images/restauranter/land-strand.jpg",
-        "phone": "",
-        "position": "63.438377892185606  10.507565129174736",
-        "title": "Land & Strand",
-        "web": "http://www.landstrand.no/"
     },
     {
         "adresse": "TMV-kaia 17",
@@ -1635,16 +1350,6 @@
         "web": "https://www.dognvillburger.no/"
     },
     {
-        "adresse": "Thomas Angells gt. 12 B",
-        "description": "Kontaktinfo",
-        "email": "",
-        "image_url": "",
-        "phone": "48850200",
-        "position": "",
-        "title": "TAG",
-        "web": "https://tagrestaurant.no/"
-    },
-    {
         "adresse": "Thomas Angells gate 14",
         "description": "Rettene hos La Border er inspirert av en utveksling av kulturer som finnes på grensen mellom USA og Mexico.",
         "email": "",
@@ -1692,7 +1397,7 @@
         "phone": "91544804",
         "position": "63.434242 10.400575",
         "title": "Grano",
-        "web": ""
+        "web": "https://wolt.com/nb/nor/trondheim/restaurant/grano"
     },
     {
         "adresse": "Mellomveien 16",
@@ -1725,16 +1430,6 @@
         "web": "https://www.kraftbodega.no/"
     },
     {
-        "adresse": "Vår Frue strete 3",
-        "description": "Vietnamesisk spisested med sentral beliggenhet bak Vår Frues kirke i de gamle lokalene til legendariske Parkkaféen og like legendariske Zia Teresa.",
-        "email": "vidarestaurant@live.no",
-        "image_url": "images/restauranter/ViDa.jpg",
-        "phone": "46884450%20",
-        "position": "63.429750 10.398401",
-        "title": "ViDa",
-        "web": "https://vidavietnam.com/"
-    },
-    {
         "adresse": "Strindfjordveien 40",
         "description": "Ligger ytterst på Grilstad Marina på Ranheim. Her er det parkering for både bil og sykkel. Nærmeste busstopp er ",
         "email": "post@flipperkafe.no",
@@ -1759,7 +1454,7 @@
         "description": "Amerikanskinspirert, 30-talls diner med sport hver dag fra Premier League, Eliteserien, NHL, NFL, m.m.",
         "email": "brooklyndiner@gmail.com",
         "image_url": "images/restauranter/Brooklyn.jpg",
-        "phone": "Tel:96004757",
+        "phone": "96004757",
         "position": "63.434378 10.413651",
         "title": "Brooklyn Diner & Sportsbar",
         "web": "https://brooklyndiner.no/"
@@ -1779,7 +1474,7 @@
         "description": "Hamburgere grillet på kull med råvarer fra lokale leverandører, pizza på italiensk maner og særegne milkshakes. Alle restaurantene er plassert i utkanten av bykjernen.",
         "email": "byasen@kompisnorge.no",
         "image_url": "",
-        "phone": "97908000",
+        "phone": "",
         "position": "63.398174 10.358121",
         "title": "Kompis Byåsen",
         "web": "https://kompisrestauranter.no/restaurant/byasen"
@@ -1789,20 +1484,10 @@
         "description": "Hamburgere grillet på kull med råvarer fra lokale leverandører, pizza på italiensk maner og særegne milkshakes. Alle restaurantene er plassert i utkanten av bykjernen.",
         "email": "heimdal@kompisnorge.no",
         "image_url": "",
-        "phone": "97908000",
+        "phone": "",
         "position": "63.351077 10.355974",
         "title": "Kompis Heimdal",
         "web": "https://kompisrestauranter.no/restaurant/heimdal"
-    },
-    {
-        "adresse": "Søndre gate 24",
-        "description": "Her blir det servert retter inspirert fra Norge, Frankrike, Italia og Asia med kortreiste råvarer.",
-        "email": "",
-        "image_url": "images/restauranter/robust.jpg",
-        "phone": "90088403",
-        "position": "63.434282 10.399968",
-        "title": "Robust Bistro",
-        "web": "https://robustbistro.no/"
     },
     {
         "adresse": "Dronningens gate 20-22",

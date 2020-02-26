@@ -11,6 +11,16 @@ class MyHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         # print("Encountered a start tag:", tag)
+
+        hrefs = [val[1] for indx, val in enumerate(attrs) if val[0] == 'href']
+        if len(hrefs) > 0:
+            if hrefs[0].startswith('http') or hrefs[0].startswith('www'):
+                self.mode = 'web'
+            elif hrefs[0].startswith('mailto'):
+                self.mode = 'email'
+            elif hrefs[0].startswith('tel'):
+                self.mode = 'phone'
+
         # if tag == 'p':
         #     self.mode == 'header'
         #     self.mode = 'description'
@@ -24,8 +34,7 @@ class MyHTMLParser(HTMLParser):
                     if mails[0].startswith('mailto:'):
                         mails[0] = mails[0][len('mailto:'):]
                     self.info['email'] = mails[0]
-                else:
-                    print('\nFant ikke mail for dette spisestedet\n')
+
 
         elif self.mode == 'web':
             if not 'web' in self.info:
@@ -34,23 +43,17 @@ class MyHTMLParser(HTMLParser):
                 webs = [val[1] for indx, val in enumerate(attrs) if val[0] == 'href']
                 if len(webs) > 0:
                     self.info['web'] = webs[0]
-                else:
-                    print('\nFant ikke web for dette spisestedet\n')
 
         elif self.mode == 'phone':
             if not 'phone' in self.info:
                 # print('\nPhone:', attrs)
                 phones = [val[1] for indx, val in enumerate(attrs) if val[0] == 'href']
                 if len(phones) > 0:
-                    if phones[0].startswith('tel:'):
+                    if phones[0].lower().startswith('tel:'):
                         phones[0] = phones[0][len('tel:'):]
-                    self.info['phone'] = phones[0]
-                else:
-                    print('\nFant ikke phone for dette spisestedet\n')
+                    if len(phones[0]) > 0:
+                        self.info['phone'] = phones[0].strip().replace('%20', '').replace(' ', '')
 
-        # elif self.mode == 'description':
-            # print('Description:', attrs)
-            
 
     def handle_endtag(self, tag):
         # print("Encountered an end tag :", tag)
@@ -62,13 +65,18 @@ class MyHTMLParser(HTMLParser):
             # Set modes
             if data.startswith('Adresse'):
                 # print('Adresse:', data[len('Adresse:'):].strip())
-                self.info['adresse'] = data[len('Adresse:'):].strip()
+                if not 'adresse' in self.info:
+                    if len(data) > len('Adresse: 1234'):
+                        self.info['adresse'] = data[len('Adresse:'):].strip()
+                    else:
+                        self.mode = 'adresse'
             elif data.startswith('Telefon'):
                 # print('Phone reached')
                 self.mode = 'phone'
-            elif data.startswith('E-post'):
+                
+            elif data.startswith('E-post') or data.startswith('Epost'):
                 self.mode = 'email'
-            elif data.startswith('Nettsted') or data.startswith('Web'):
+            elif data.startswith('Nettsted') or data.startswith('Web') or data.startswith('Hjemmeside'):
                 self.mode = 'web'
 
             # Set data
@@ -78,6 +86,13 @@ class MyHTMLParser(HTMLParser):
                     if data.strip() != '':
                         self.info['description'] = data
                     self.mode == ''
+            elif self.mode == 'adresse':
+                if not 'adresse' in self.info:
+                    self.info['adresse'] = data.strip()
+            elif self.mode == 'phone':
+                if not 'phone' in self.info:
+                    self.info['phone'] = data.strip().replace(' ', '')
+                    
 
 
 with open('l1ecv_content.json', 'r') as n:
@@ -120,7 +135,7 @@ xreference (from metadata)
 eating_places = []
 
 for data in json_file[2]['data']:
-    if data['catid'] in ['39', '55']:
+    if data['catid'] in ['39', '55'] and data['state'] == '1':
 
         # print('Starting on a new object!')
 
@@ -141,6 +156,7 @@ for data in json_file[2]['data']:
         
         html_test = html_test.replace('\r', '')
         html_test = html_test.replace('\n', '')
+        html_test = html_test.replace('&quot;', '')
         # print(html_test)
         # html_test = html_test.replace('\\', '')
         # html_test = ''.join(html_test.split())
@@ -155,13 +171,16 @@ for data in json_file[2]['data']:
             # Adding the parsed info
             eating_place[key] = val
 
-        all_keys = ['title', 'image_url', 'position', 
+        all_keys = ['title', 'image_url', 'position', 'adresse',
                     'description', 'phone', 'email', 'web']
 
         for key in all_keys:
             if not key in eating_place:
-                print(key, 'not in eating_place. Adding empty')
+                # print(key, 'not in eating_place. Adding empty')
                 eating_place[key] = ''
+
+        if eating_place['title'] == 'Olivia Solsiden':
+            print(html_test)
 
 
         eating_places.append(eating_place)
