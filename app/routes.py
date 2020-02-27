@@ -20,8 +20,23 @@ def index():
 def route_restaurant_all(ID=None):
     return Restaurant.get_delete_put_post(ID)
 
+@app.route('/user/<int:ID>', methods=['GET', 'PUT', 'DELETE', 'POST'])
+@app.route('/user', methods=['GET', 'POST'])
+def route_user_all(ID=None):
+    return User.get_delete_put_post(ID)
+
+@app.route('/visit', methods=['POST'])
+def route_visit():
+    userID = request.data['userID']
+    restaurantID = request.data['restaurantID']
+    user = User.query.get_or_404(userID)
+    restaurant = Restaurant.query.get_or_404(restaurantID)
+    user.visited_restaurants.append(restaurant)
+    db.session.add(user)
+    db.session.commit()
+    return 'Success'
     
-@app.route('/user', methods=['GET'])
-def user():
-    return User.json_list(User.query.all())
+# @app.route('/user', methods=['GET'])
+# def user():
+#     return User.json_list(User.query.all())
     

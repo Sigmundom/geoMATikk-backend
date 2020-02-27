@@ -22,3 +22,4 @@ psycopg2==2.8.4
 flask-API==2.0
 EasyDict==1.9 
 flask-serialize==1.1.6
+geomet==0.2.1.post1
