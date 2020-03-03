@@ -46,7 +46,7 @@ class User(db.Model, FlaskSerializeMixin):
 class Restaurant(db.Model, FlaskSerializeMixin):
     id = db.Column(db.Integer, primary_key=True, index=True)
     name = db.Column(db.String)
-    position = db.Column(Geometry(geometry_type="POINT", srid=4326),)
+    position = db.Column(Geometry(geometry_type="POINT", srid=4326))
     price_class = db.Column(db.Integer)
     rating = db.Column(db.Integer)
     description = db.Column(db.String)
