@@ -39,8 +39,6 @@ class User(db.Model, FlaskSerializeMixin):
     exclude_serialize_fields = [] # List of model field names to not serialize at all.
     relationship_fields = ['visited_restaurants'] # Add any relationship property name here to be included in serialization.
 
-
-
     def __repr__(self):
         return 'id: {}, name: {}'.format(self.id, self.name)
 
@@ -54,6 +52,15 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     description = db.Column(db.String)
     image_url = db.Column(db.String)
     phone = db.Column(db.String)
+
+    def __init__(self, name, position, price_class, rating, description, image_url, phone):
+        self.name = name
+        self.position = position
+        self.price_class = price_class
+        self.rating = rating
+        self.description = description
+        self.image_url = image_url
+        self.phone = phone
 
     @property
     def location(self):
