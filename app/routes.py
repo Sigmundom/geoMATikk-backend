@@ -20,6 +20,18 @@ def index():
 def route_restaurant_all(ID=None):
     return Restaurant.get_delete_put_post(ID)
 
+@app.route('/restaurant/filter', methods=['GET'])
+def route_restaurant_search():
+    params = request.args
+    if params:
+        if params['search']:
+            query = Restaurant.query.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
+    else:
+        # Returns all restaurants if no filters
+        query = Restaurant.query.all()
+
+    return Restaurant.json_list(query)
+
 @app.route('/user/<int:ID>', methods=['GET', 'PUT', 'DELETE', 'POST'])
 @app.route('/user', methods=['GET', 'POST'])
 def route_user_all(ID=None):
