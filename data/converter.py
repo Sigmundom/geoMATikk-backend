@@ -72,10 +72,16 @@ class MyHTMLParser(HTMLParser):
                         self.mode = 'adresse'
             elif data.startswith('Telefon'):
                 # print('Phone reached')
-                self.mode = 'phone'
+                if len(data) > len('Telefon:') + 5 and not 'phone' in self.info:
+                    self.info['phone'] = data.strip().replace(' ', '').replace('Telefon:', '')
+                else:
+                    self.mode = 'phone'
                 
             elif data.startswith('E-post') or data.startswith('Epost'):
-                self.mode = 'email'
+                if len(data) > len('E-post:') + 5 and not 'email' in self.info:
+                    self.info['email'] = data.strip().replace(' ', '').replace('E-post:', '')
+                else:
+                    self.mode = 'email'
             elif data.startswith('Nettsted') or data.startswith('Web') or data.startswith('Hjemmeside'):
                 self.mode = 'web'
 

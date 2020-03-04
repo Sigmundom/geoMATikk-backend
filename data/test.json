@@ -962,9 +962,9 @@
     {
         "adresse": "Beddingen 16, Trondheim.",
         "description": "Italiensk restaurant (pizzeria, trattoria) i fine omgivelser på Solsiden, like ved Blomsterbrua. Moderne lokaler med uteservering (tidligere Cafe Nyfiken). Olivia-kjeden har også restauranter i Oslo.",
-        "email": "",
+        "email": "booking@olivia.no",
         "image_url": "images/restauranter/olivia.jpg",
-        "phone": "",
+        "phone": "+4723115470",
         "position": "63.435410477 10.408858279",
         "title": "Olivia Solsiden",
         "web": ""
@@ -1024,7 +1024,7 @@
         "description": "Restaurant med uteservering og med bar/lounge i kjelleren. Variert meny inkludert sharing-konsept. TAG er oppkalt etter gata den ligger i, en forkortelse av Thomas Angells gate.",
         "email": "post@tagrestaurant.no",
         "image_url": "images/restauranter/tag.jpg",
-        "phone": "",
+        "phone": "+4748850200",
         "position": "63.4327598289 10.3985821644",
         "title": "TAG Restaurant",
         "web": "http://tagrestaurant.no/"
@@ -1034,7 +1034,7 @@
         "description": "Lunsj- og middagsrestaurant med tradisjonelle indiske retter på menyen. Også vegetaralternativer.",
         "email": "post@tasteofindia-trondheim.no",
         "image_url": "images/restauranter/tasteofindia.jpg",
-        "phone": "",
+        "phone": "+4773524600",
         "position": "63.4339534 10.40104969999",
         "title": "Taste of India",
         "web": "http://tasteofindia-trondheim.no/"
@@ -1044,7 +1044,7 @@
         "description": "Restaurant og kafe i den tidligere kommandantboligen innenfor murene på Kristiansten festning. Gratis inngang.",
         "email": "kommandanten@festningenservering.no",
         "image_url": "images/restauranter/kommandanten3.jpg",
-        "phone": "",
+        "phone": "+4745052666",
         "position": "63.4272828 10.41089499999",
         "title": "Kommandanten",
         "web": "http://festningenservering.no/"
@@ -1054,7 +1054,7 @@
         "description": "Amerikansk kjederestaurant og sportsbar. Sentral beliggenhet, nær Ravnkloa i Olav Tryggvasons gate.",
         "email": "trondheim@olearys.no",
         "image_url": "images/restauranter/o-learys.jpg",
-        "phone": "",
+        "phone": "+4773487722",
         "position": "63.4332754814 10.393957634",
         "title": "O'Learys",
         "web": "http://www.olearys.no/trondheim"
@@ -1084,7 +1084,7 @@
         "description": "Røst holder til den tidligere Theatercafeen i den historiske fløyen av Trøndelags Teaters bygning. Restaurantsjefen har tidligere jobbet for Michelin-restauranten Maaemo. På menyen står kortreist, ujålet mat fra fjell og fjord med selvdyrkede grønnsaker.",
         "email": "post@rostbistro.n",
         "image_url": "images/restauranter/rost.jpg",
-        "phone": "",
+        "phone": "+4740695111",
         "position": "63.42933234602587 10.392370230024653",
         "title": "Røst Teaterbistro",
         "web": "http://www.rostbistro.no"
@@ -1094,7 +1094,7 @@
         "description": "Selma pizza og bar serverer økologisk pizza i vedfyrt steinovn. De har også et bredt utvalg på tapp.",
         "email": "",
         "image_url": "images/restauranter/selma.jpg",
-        "phone": "",
+        "phone": "+4792012181",
         "position": "63.434499 10.4121149999",
         "title": "Selma pizza og bar ",
         "web": "http://selmabar.no/"
@@ -1132,9 +1132,9 @@
     {
         "adresse": "Sjøgangen 6, Trondheim.",
         "description": "Røft Rotisseri ligger i Trapphuset ved Trondheim Sentralstasjon. På menyen er retter fra nordamerikanske grillkjøkken i fokus.",
-        "email": "",
+        "email": "post@roft.no",
         "image_url": "images/restauranter/roft.jpg",
-        "phone": "",
+        "phone": "+4773188100",
         "position": "63.43639505473937  10.399686098098755",
         "title": "Røft Rotisseri",
         "web": "http://www.roft.no"
@@ -1144,7 +1144,7 @@
         "description": "Troll er et spisested på Fosenkaia, vis-a-vis jernbanestasjonen. Moderne versjoner av norsk tradisjonskost på menyen. Stedet har også en liten scene.",
         "email": "booking@trollrestaurant.no",
         "image_url": "images/restauranter/troll.jpg",
-        "phone": "",
+        "phone": "+4773487990",
         "position": "63.43578352424777  10.39708055001529",
         "title": "Troll Restaurant",
         "web": "http://www.trollrestaurant.no"
@@ -1182,7 +1182,7 @@
     {
         "adresse": "Øvre Bakklandet 66, Trondheim.",
         "description": "Sabrura Bakklandet ligger like ved Gamle Bybro (i de tidligere lokalene til Sabor). Her serveres sushi, grillspyd og salater med en norsk vri og kortreiste råvarer der det er mulig.",
-        "email": "",
+        "email": "post@sabrurasushi.no",
         "image_url": "images/restauranter/sabrura-bakklandet.JPG",
         "phone": "",
         "position": "",
@@ -1194,7 +1194,7 @@
         "description": "Mesob er en eritreisk - etiopisk restaurant, etablert i 2016 i de tidligere lokalene til Taj Tandoori. Beliggenhet i Ravnkloa.",
         "email": "",
         "image_url": "images/restauranter/mesob.jpg",
-        "phone": "",
+        "phone": "+4745051022",
         "position": " 63.4336599 10.392784099999",
         "title": "Mesob Restaurant",
         "web": "https://www.facebook.com/mesobtrondheim/"
@@ -1202,9 +1202,9 @@
     {
         "adresse": "Beddingen 1, Trondheim.",
         "description": "Sushime serverer tradisjonell sushi fra det japanske kjøkken. Restauranten ligger i samme bygg som Hotel Scandic Solsiden. Egen lunsj- og take away-meny.",
-        "email": "",
+        "email": " post@sushime.no",
         "image_url": "images/restauranter/sushime.jpg",
-        "phone": "",
+        "phone": " +4773185040",
         "position": "63.434551 10.4141710",
         "title": "Sushime",
         "web": ""
@@ -1212,9 +1212,9 @@
     {
         "adresse": "Nedre Ila 2, Trondheim.",
         "description": "Restaurant og bar ved seilbåtmarinaen på Skansen. Serverer sjømat, salater, burgere og sandwicher, i hjemmelaget stil. ",
-        "email": "",
+        "email": " booking@lille-skansen.no",
         "image_url": "images/restauranter/lilleskansen.jpg",
-        "phone": "",
+        "phone": " +4773921151",
         "position": "63.431923 10.377455",
         "title": "Lille Skansen",
         "web": ""
@@ -1224,7 +1224,7 @@
         "description": "Sushirestaurant ved torget der Bassengbakken møter Trenerys gate, ikke langt fra Solsiden kjøpesenter. Sabrura har også restauranter på Bakklandet, Byhaven, City Lade, City Syd og Sirkus Shopping.",
         "email": "",
         "image_url": "images/restauranter/sabrura-bassengbakken.jpg",
-        "phone": "",
+        "phone": " +4773187878",
         "position": "63.4356946 10.41539309999",
         "title": "Sabrura Solsiden",
         "web": ""
@@ -1244,7 +1244,7 @@
         "description": "Serverer frokost, lunsj og kaffedrikker. Cafeen er en klassisk espressobar som er uavhengig av noen av de større kjedene. Den ligger s",
         "email": "",
         "image_url": "images/bar-kafe/lefrere_web.jpg",
-        "phone": "",
+        "phone": "90090989",
         "position": "",
         "title": " Café Le Frère",
         "web": "https://www.facebook.com/cafelefrere"
@@ -1292,9 +1292,9 @@
     {
         "adresse": "Ladeveien 9, Trondheim.",
         "description": "Jossa Mat og Drikke ligger i samme bygning som gourmetrestauranten Credo på Lilleby (felles inngang - Jossa til høyre). Jossa er et rustikk og rimeligere alternativ til Credo. Menyen baseres på et geografisk konsept (hvor Jossa \"reiser\", og henter inspirasjon til rettene fra). ",
-        "email": "",
+        "email": " brev@jossamatogdrikke.no",
         "image_url": "images/restauranter/jossa600.jpg",
-        "phone": "",
+        "phone": " +4795437028",
         "position": "63.442545  10.437011",
         "title": "Jossa Mat og Drikke",
         "web": ""
