@@ -22,13 +22,8 @@ def route_restaurant_all(ID=None):
 
 @app.route('/restaurant/filter', methods=['GET'])
 def route_restaurant_search():
-    params = request.args
-    # Default: Returns all restaurants if no filters
-    query = Restaurant.query.all()
-    if params:
-        if params['search']:
-            query = Restaurant.query.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
-       
+    query = Restaurant.fuzzy_filter(request.args)
+        
 
     return Restaurant.json_list(query)
 

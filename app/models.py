@@ -20,6 +20,7 @@ from app import db
 from flask_serialize import FlaskSerializeMixin
 from geoalchemy2 import Geometry
 from geomet import wkb
+import json
 
 FlaskSerializeMixin.db = db
 
@@ -64,7 +65,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
 
     @property
     def location(self):
-        pos = wkb.loads(bytes.fromhex(str(self.position)))['coordinates']
+        pos = wkb.loads(bytes(self.position.data))['coordinates']
         return {'latitude': pos[0], 'longitude': pos[1]}
 
     create_fields = update_fields = (['name', 'position', 'price_class', 'rating', 
@@ -89,6 +90,45 @@ class Restaurant(db.Model, FlaskSerializeMixin):
 
     def __repr__(self):
         return 'id: {}, name: {}'.format(self.id, self.name)
+
+    @classmethod
+    def fuzzy_filter(self, params):
+        def normalize_array(array):
+            maximum = min(array)
+            norm = [float(i)/maximum for i in array]
+        # Default: Returns all restaurants if no filters
+        restaurants = Restaurant.query
+
+        try:
+            priceParams = json.loads(params['price'])
+            nearbyParams = json.loads(params['nearby'])
+            ratingParams = json.loads(params['rating'])
+        except:
+            print("Could not parse request parameters")
+
+
+        if params:
+            if params['search']:
+                restaurants = restaurants.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
+            if nearbyParams['active'] and nearbyParams['position']:
+                pos = nearbyParams['position']['coords']
+                point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
+                
+                restaurants = restaurants.add_columns(Restaurant.position.distance_centroid(point).label("distance")).filter("distance" < 5000)
+                distances = [r.distance for r in restaurants]
+                min_distance = min(distances)
+                weight = 0.2 * (nearbyParams['weight'] + 1)
+                distances = [weight * max(min_distance/i, 1-i/5000) for i in distances]
+
+            if ratingParams['active']:
+                weight = 0.2 * (ratingParams['weight'] + 1)
+
+            if priceParams['active']:
+                for r in restaurants:
+                    print(r.price_class)
+
+
+        return restaurants
 
 
 
