@@ -55,7 +55,9 @@ def new_user():
     user.hash_password(password)
     db.session.add(user)
     db.session.commit()
-    return jsonify({ 'username': user.username }), 201, {'Location': url_for('get_user', id = user.id, _external = True)}
+    print(url_for('get_user', id = user.id, _external = True))
+    token =  user.generate_auth_token()
+    return jsonify({ 'username': user.username, 'token': token.decode('ascii') }), 201, {'Location': url_for('get_user', id = user.id, _external = True)}
 
 @app.route('/users/<int:id>')
 def get_user(id):
@@ -66,7 +68,7 @@ def get_user(id):
 @auth.login_required
 def get_auth_token():
     token = g.user.generate_auth_token()
-    return jsonify({ 'token': token.decode('ascii') })
+    return jsonify({ 'username': g.user.username, 'token': token.decode('ascii') })
 
 @app.route('/resource')
 @auth.login_required

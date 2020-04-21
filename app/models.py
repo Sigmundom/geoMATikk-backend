@@ -47,7 +47,7 @@ class User(db.Model, FlaskSerializeMixin):
     relationship_fields = ['visited_restaurants'] # Add any relationship property name here to be included in serialization.
 
     def __repr__(self):
-        return 'id: {}, name: {}'.format(self.id, self.name)
+        return 'id: {}, username: {}'.format(self.id, self.username)
 
     def hash_password(self, password):
         self.password_hash = pwd_context.encrypt(password)
@@ -56,13 +56,11 @@ class User(db.Model, FlaskSerializeMixin):
         return pwd_context.verify(password, self.password_hash)
 
     def generate_auth_token(self, expiration = 600):
-        print("SC1", app.config['SECRET_KEY'])
         s = Serializer(app.config['SECRET_KEY'], expires_in = expiration)
         return s.dumps({ 'id': self.id })
 
     @staticmethod
     def verify_auth_token(token):
-        print("SC2", app.config['SECRET_KEY'])
         s = Serializer(app.config['SECRET_KEY'])
         try:
             data = s.loads(token)
