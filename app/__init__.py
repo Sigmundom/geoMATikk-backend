@@ -1,10 +1,10 @@
-from app.config import Config
 # from flask import Flask
 from flask_api import FlaskAPI
 from app.config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
+# from app import config
 
 
 #This can be changed to your local setup, if you use a different setup of variables
@@ -23,8 +23,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhos
 
 # db.init_app(app)
 
-app.config.from_pyfile('config.py')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config.from_object('app.config.Config')
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 manager = Manager(app)
