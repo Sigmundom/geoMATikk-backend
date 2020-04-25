@@ -83,6 +83,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     description = db.Column(db.String)
     image_url = db.Column(db.String)
     phone = db.Column(db.String)
+    kitchen = db.Column(db.ARRAY(db.String))
 
     def __init__(self, name, position, price_class, rating, description, image_url, phone):
         self.name = name
@@ -132,6 +133,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
             priceParams = json.loads(params['price'])
             nearbyParams = json.loads(params['nearby'])
             ratingParams = json.loads(params['rating'])
+            # kitchenFilter = json.loads(params['kitchen'])
         except:
             print("Could not parse request parameters")
 
@@ -142,6 +144,10 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                         func.ST_GeomFromText(point)).label('distance'))
         else:
             restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
+
+        # print(kitchenFilter)
+        # if len(kitchenFilter) > 0:
+        #     restaurants = restaurants.filter(Restaurant.kitchen_in(kitchenFilter))
         
         scores = [{'id': r.id, 'score':0} for r in restaurants]
         n_restaurants = len(scores)
