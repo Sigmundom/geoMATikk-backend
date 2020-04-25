@@ -158,7 +158,11 @@ for data in json_file[2]['data']:
             eating_place['position'] = '10.396365 63.433984'
         else:
             pos = json.loads(data['metadata'])['xreference'].split(',')
-            eating_place['position'] = '%s %s' %(pos[1], pos[0])
+            if len(pos) < 2:
+                print(data)
+                print(pos, eating_place['title'])
+
+            eating_place['position'] = '%s %s' %(pos[1].strip(), pos[0].strip())
 
         # html_test = "<p>Michelinstjerne-belønnet restaurant på Lilleby, like nordøst for Trondheim sentrum. Her serveres ikke mat á la carte. I stedet bestemmer kjøkkenet hvilke smaker som skal rendyrkes, med utgangspunkt i råvarene som finnes på en gitt dag. Kokkene komponerer hver dag en unik kombinasjon av retter og vin. Man kan til vanlig velge mellom tre og fem retter. Credo var sammen med Fagn de to første restaurantene i Trondheim som mottok en Michelin-stjerne i februar 2019.<\/p>\r\n<h4>Kontaktinfo<\/h4>\r\n<p>Adresse: Ladeveien 9, Trondheim<\/p>\r\n<p>Telefon : <a href=\"tel:+47 954 37 028\">+47 954 37 028<\/a><\/p>\r\n<p>E-post: <a class=\"dark_gray partner-hover mailto\" href=\"mailto:credo@restaurantcredo.no\" rel=\"noindex, nofollow\">Send en e-post <\/a><\/p>\r\n<p>Nettsted: <a class=\"dark_gray url partner-hover\" href=\"http:\/\/www.restaurantcredo.no\" target=\"_blank\" rel=\"noindex, nofollow noopener noreferrer\">Besøk websiden <\/a><\/p>"
         html_test = data['introtext']
@@ -188,8 +192,13 @@ for data in json_file[2]['data']:
                 # print(key, 'not in eating_place. Adding empty')
                 eating_place[key] = ''
 
+        # Add default rating and price
+        eating_place['rating'] = 3
+        eating_place['price'] = 3
+
         if eating_place['title'] == 'Olivia Solsiden':
             print(html_test)
+
 
 
         eating_places.append(eating_place)
@@ -199,4 +208,8 @@ for data in json_file[2]['data']:
         # break
 
 with open('test.json', 'w') as outFile:
+    # data = json.load(outFile)
+    # for i in range(len(data)):
+    #     if not data[i] == eating_places[i] and i == 0:
+    #         print(data[i], eating_places[i])
     json.dump(eating_places, outFile, ensure_ascii=False, indent=4, sort_keys=True)
