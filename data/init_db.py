@@ -19,7 +19,8 @@ def init():
 			restaurant['rating'],
 			restaurant['description'],
 			restaurant['image_url'],
-			restaurant['phone']
+			restaurant['phone'],
+			restaurant['kitchen']
 		)
 		db.session.add(restaurant_object)
 	

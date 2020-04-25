@@ -85,7 +85,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     phone = db.Column(db.String)
     kitchen = db.Column(db.ARRAY(db.String))
 
-    def __init__(self, name, position, price_class, rating, description, image_url, phone):
+    def __init__(self, name, position, price_class, rating, description, image_url, phone, kitchen):
         self.name = name
         self.position = position
         self.price_class = price_class
@@ -93,6 +93,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         self.description = description
         self.image_url = image_url
         self.phone = phone
+        self.kitchen = kitchen
 
     @property
     def location(self):
