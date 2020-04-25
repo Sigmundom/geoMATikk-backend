@@ -19,7 +19,9 @@ https://github.com/Martlark/flask-serialize/blob/master/flask_serialize/flask_se
 from app import db, app
 from flask_serialize import FlaskSerializeMixin
 from geoalchemy2 import Geometry
-from geomet import wkb
+from sqlalchemy import func
+from geomet import wkb, wkt
+from sqlalchemy.orm import defer, load_only, defaultload
 import json
 from passlib.apps import custom_app_context as pwd_context
 from itsdangerous import (TimedJSONWebSignatureSerializer as Serializer, BadSignature, SignatureExpired)
@@ -81,6 +83,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     description = db.Column(db.String)
     image_url = db.Column(db.String)
     phone = db.Column(db.String)
+    kitchen = db.Column(db.ARRAY(db.String))
 
     def __init__(self, name, position, price_class, rating, description, image_url, phone):
         self.name = name
@@ -121,44 +124,89 @@ class Restaurant(db.Model, FlaskSerializeMixin):
 
     @classmethod
     def fuzzy_filter(self, params):
+        ALPHA = 5
         def normalize_array(array):
             maximum = min(array)
             norm = [float(i)/maximum for i in array]
-        # Default: Returns all restaurants if no filters
-        restaurants = Restaurant.query
 
         try:
             priceParams = json.loads(params['price'])
             nearbyParams = json.loads(params['nearby'])
             ratingParams = json.loads(params['rating'])
+            kitchenFilter = json.loads(params['kitchen'])
         except:
             print("Could not parse request parameters")
 
+        if nearbyParams['active'] and nearbyParams['position']:
+            pos = nearbyParams['position']['coords']
+            point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
+            restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class, func.ST_DistanceSphere(Restaurant.position,
+                        func.ST_GeomFromText(point)).label('distance'))
+        else:
+            restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
 
-        if params:
-            if params['search']:
-                restaurants = restaurants.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
-            if nearbyParams['active'] and nearbyParams['position']:
-                pos = nearbyParams['position']['coords']
-                point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
-                
-                restaurants = restaurants.add_columns(Restaurant.position.distance_centroid(point).label("distance")).filter("distance" < 5000)
-                distances = [r.distance for r in restaurants]
-                min_distance = min(distances)
-                weight = 0.2 * (nearbyParams['weight'] + 1)
-                distances = [weight * max(min_distance/i, 1-i/5000) for i in distances]
+        print(kitchenFilter)
+        if len(kitchenFilter) > 0:
+            restaurants = restaurants.filter(Restaurant.kitchen.overlap(kitchenFilter))
+        
+        scores = [{'id': r.id, 'score':0} for r in restaurants]
+        n_restaurants = len(scores)
+        sum_weights = 0
 
-            if ratingParams['active']:
-                weight = 0.2 * (ratingParams['weight'] + 1)
+        if nearbyParams['active'] and nearbyParams['position']:
+            min_distance = restaurants[0].distance
+            for r in restaurants:
+                if (r.distance < min_distance):
+                    min_distance = r.distance
 
-            if priceParams['active']:
-                for r in restaurants:
-                    print(r.price_class)
+            weight = 0.2 * (nearbyParams['weight'] + 1) 
+            sum_weights += weight 
+            
+            for i in range(n_restaurants):
+                distance = restaurants[i].distance
+                scores[i]['score'] += weight * max(0, min_distance/distance, 1-distance/5000)**ALPHA
+        
+        if ratingParams['active']:            
+            weight = 0.2 * (ratingParams['weight'] + 1)
+            sum_weights += weight 
 
+            for i in range(n_restaurants):
+                rating = restaurants[i].rating
+                if rating:
+                    scores[i]['score'] += weight * ((rating-1)/4)**ALPHA
+        
+        if priceParams['active']:
+            weight = 0.2 * (priceParams['weight'] + 1)
+            sum_weights += weight 
+
+            preffered_value = priceParams['prefferedValue']
+
+            for i in range(n_restaurants):
+                price_class = restaurants[i].price_class
+                if price_class:
+                    score = (price_class-1)/4
+                    if preffered_value == 'low':
+                        score = 1 - score
+                    scores[i]['score'] += weight * score**ALPHA
+        
+        for item in scores:
+            total_score = (item['score']/sum_weights)**(1/ALPHA)
+            item['score'] = total_score
+                    
+        scores = sorted(scores, key=lambda item:item['score'], reverse=True) #Sorts on score. Decending
+
+        best_restaurants_id = [item['id'] for item in scores[:9]]
+        print(scores[:9])
+        print(scores[-1])
+        print (best_restaurants_id)
+        restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
+        print(restaurants)
 
         return restaurants
 
 
+# if params['search']:
+#                 restaurants = restaurants.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
 
 
 # Template Model
