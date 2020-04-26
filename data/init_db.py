@@ -6,7 +6,7 @@ sys.path.append("..")
 from app.models import *
 
 def init():
-	with open('data/ratingprice.json', 'r') as data:
+	with open('data/done.json', 'r') as data:
 		json_file = json.load(data)
 
 	for restaurant in json_file:

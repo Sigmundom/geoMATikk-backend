@@ -99,7 +99,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     @property
     def location(self):
         pos = wkb.loads(bytes(self.position.data))['coordinates']
-        return {'latitude': pos[0], 'longitude': pos[1]}
+        return {'latitude': pos[1], 'longitude': pos[0]}
 
     create_fields = update_fields = (['name', 'position', 'price_class', 'rating', 
         'description', 'image_url', 'phone', 'kitchen']) # List of required fields
@@ -147,12 +147,15 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         else:
             restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
             
-        kitchenFilter = params['kitchens'].split(',')
+        kitchenParams = params['kitchens']
+        kitchenFilter = kitchenParams.split(',') if len(kitchenParams)>0 else None
         print(kitchenFilter)
 
-        if kitchenFilter:
+        if kitchenFilter == ['']:
             print(kitchenFilter)
             restaurants = restaurants.filter(Restaurant.kitchen.overlap(cast(kitchenFilter, db.ARRAY(db.String))))
+            if restaurants.count()==0:
+                return {'error': 'No restaurants matching chosen kitchens'}
         
         scores = [{'id': r.id, 'score':0} for r in restaurants]
         n_restaurants = len(scores)
@@ -193,7 +196,8 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                     if preffered_value == 'low':
                         score = 1 - score
                     scores[i]['score'] += weight * score**ALPHA
-        
+        if sum_weights == 0:
+            return {'error': 'No filter weights'}
         for item in scores:
             total_score = (item['score']/sum_weights)**(1/ALPHA)
             item['score'] = total_score
@@ -205,10 +209,9 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         # print(scores[-1])
         print (best_restaurants_id)
         restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
-        print(restaurants)
-        print(restaurants)
+        print(restaurants.all())
 
-        return restaurants
+        return Restaurant.json_list(restaurants)
 
 
 # if params['search']:

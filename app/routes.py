@@ -23,9 +23,7 @@ def route_restaurant_all(ID=None):
 
 @app.route('/restaurant/filter', methods=['GET'])
 def route_restaurant_search():
-    result = Restaurant.fuzzy_filter(request.args)
-
-    return Restaurant.json_list(result)
+    return Restaurant.fuzzy_filter(request.args)
 
 
 # Users --------------------------------------
