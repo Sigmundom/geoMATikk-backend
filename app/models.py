@@ -19,13 +19,14 @@ https://github.com/Martlark/flask-serialize/blob/master/flask_serialize/flask_se
 from app import db, app
 from flask_serialize import FlaskSerializeMixin
 from geoalchemy2 import Geometry
-from sqlalchemy import func
+from sqlalchemy import func, cast
 from geomet import wkb, wkt
 from sqlalchemy.orm import defer, load_only, defaultload
 import json
 from passlib.apps import custom_app_context as pwd_context
 from itsdangerous import (TimedJSONWebSignatureSerializer as Serializer, BadSignature, SignatureExpired)
 from flask_httpauth import HTTPBasicAuth
+from sqlalchemy.dialects import postgresql
 
 auth = HTTPBasicAuth()
 
@@ -83,7 +84,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     description = db.Column(db.String)
     image_url = db.Column(db.String)
     phone = db.Column(db.String)
-    kitchen = db.Column(db.ARRAY(db.String))
+    kitchen = db.Column(postgresql.ARRAY(db.String))
 
     def __init__(self, name, position, price_class, rating, description, image_url, phone, kitchen):
         self.name = name
@@ -101,8 +102,8 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         return {'latitude': pos[0], 'longitude': pos[1]}
 
     create_fields = update_fields = (['name', 'position', 'price_class', 'rating', 
-        'description', 'image_url', 'phone']) # List of required fields
-    exclude_serialize_fields = ['position'] # List of model field names to not serialize at all.
+        'description', 'image_url', 'phone', 'kitchen']) # List of required fields
+    exclude_serialize_fields = ['position', 'kitchen'] # List of model field names to not serialize at all.
     relationship_fields = [] # Add any relationship property name here to be included in serialization.
 
 
@@ -129,14 +130,14 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         def normalize_array(array):
             maximum = min(array)
             norm = [float(i)/maximum for i in array]
-
+        print(params)
         try:
             priceParams = json.loads(params['price'])
             nearbyParams = json.loads(params['nearby'])
             ratingParams = json.loads(params['rating'])
-            kitchenFilter = json.loads(params['kitchen'])
         except:
             print("Could not parse request parameters")
+            return db.session.query(Restaurant)
 
         if nearbyParams['active'] and nearbyParams['position']:
             pos = nearbyParams['position']['coords']
@@ -145,10 +146,13 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                         func.ST_GeomFromText(point)).label('distance'))
         else:
             restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
-
+            
+        kitchenFilter = params['kitchens'].split(',')
         print(kitchenFilter)
-        if len(kitchenFilter) > 0:
-            restaurants = restaurants.filter(Restaurant.kitchen.overlap(kitchenFilter))
+
+        if kitchenFilter:
+            print(kitchenFilter)
+            restaurants = restaurants.filter(Restaurant.kitchen.overlap(cast(kitchenFilter, db.ARRAY(db.String))))
         
         scores = [{'id': r.id, 'score':0} for r in restaurants]
         n_restaurants = len(scores)
@@ -198,9 +202,10 @@ class Restaurant(db.Model, FlaskSerializeMixin):
 
         best_restaurants_id = [item['id'] for item in scores[:9]]
         print(scores[:9])
-        print(scores[-1])
+        # print(scores[-1])
         print (best_restaurants_id)
         restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
+        print(restaurants)
         print(restaurants)
 
         return restaurants
