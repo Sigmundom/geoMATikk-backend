@@ -79,31 +79,41 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     id = db.Column(db.Integer, primary_key=True, index=True)
     name = db.Column(db.String)
     position = db.Column(Geometry(geometry_type="POINT", srid=4326))
-    price_class = db.Column(db.Integer)
-    rating = db.Column(db.Integer)
+    price_class_sum = db.Column(db.Integer)
+    rating_sum = db.Column(db.Integer)
     description = db.Column(db.String)
     image_url = db.Column(db.String)
     phone = db.Column(db.String)
     kitchen = db.Column(postgresql.ARRAY(db.String))
+    number_of_ratings = db.Column(db.Integer)
 
     def __init__(self, name, position, price_class, rating, description, image_url, phone, kitchen):
         self.name = name
         self.position = position
-        self.price_class = price_class
-        self.rating = rating
+        self.price_class_sum = price_class
+        self.rating_sum = rating
         self.description = description
         self.image_url = image_url
         self.phone = phone
         self.kitchen = kitchen
+        self.number_of_ratings = 1
 
     @property
     def location(self):
         pos = wkb.loads(bytes(self.position.data))['coordinates']
         return {'latitude': pos[1], 'longitude': pos[0]}
 
+    @property
+    def rating(self):
+        return self.rating_sum/self.number_of_ratings
+
+    @property
+    def price_class(self):
+        return self.price_class_sum/self.number_of_ratings
+
     create_fields = update_fields = (['name', 'position', 'price_class', 'rating', 
         'description', 'image_url', 'phone', 'kitchen']) # List of required fields
-    exclude_serialize_fields = ['position', 'kitchen'] # List of model field names to not serialize at all.
+    exclude_serialize_fields = ['position', 'kitchen', 'price_class_sum', 'rating_sum'] # List of model field names to not serialize at all.
     relationship_fields = [] # Add any relationship property name here to be included in serialization.
 
 
@@ -125,10 +135,18 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         return 'id: {}, name: {}'.format(self.id, self.name)
 
     @classmethod
+    def rate_restaurant(self, restaurant_id, rating, price):
+        restaurant = Restaurant.query.get_or_404(restaurant_id)
+        restaurant.price_class += int(price)
+        restaurant.rating += int(rating)
+        restaurant.number_of_ratings += 1
+        db.session.commit()
+        return {'message': 'success'}
+
+    @classmethod
     def fuzzy_filter(self, params):
         ALPHA = 5
 
-        print(params)
         try:
             priceParams = json.loads(params['price'])
             nearbyParams = json.loads(params['nearby'])

@@ -14,29 +14,6 @@ from app.models import *
 def index():
     return {'hello': 'world'}
 
-#Restaurants ----------------------------------
-
-@app.route('/restaurant/<int:ID>', methods=['GET', 'PUT', 'DELETE', 'POST'])
-@app.route('/restaurant', methods=['GET', 'POST'])
-def route_restaurant_all(ID=None):
-    return Restaurant.get_delete_put_post(ID)
-
-@app.route('/restaurant/filter', methods=['GET'])
-def route_restaurant_filter():
-    return Restaurant.fuzzy_filter(request.args)
-
-@app.route('/restaurant/search', methods=['GET'])
-def route_restaurant_search():
-    print(request)
-    try:
-        search_str = request.args['search']
-        restaurants = Restaurant.query.filter(Restaurant.name.ilike('%' + search_str + '%')).all()
-    except:
-        abort(400, 'Missing argument: "search"')
-
-    return Restaurant.json_list(restaurants)
-
-
 # Users --------------------------------------
 
 @auth.verify_password
@@ -78,16 +55,45 @@ def get_auth_token():
     token = g.user.generate_auth_token()
     return jsonify({ 'username': g.user.username, 'token': token.decode('ascii') })
 
-@app.route('/resource')
-@auth.login_required
-def get_resource():
-    return jsonify({ 'data': 'Hello, %s!' % g.user.username })
-
     
 # @app.route('/user/<int:ID>', methods=['GET', 'PUT', 'DELETE', 'POST'])
 # @app.route('/user', methods=['GET', 'POST'])
 # def route_user_all(ID=None):
 #     return User.get_delete_put_post(ID)
+
+#Restaurants ----------------------------------
+
+@app.route('/restaurant/<int:ID>', methods=['GET', 'PUT', 'DELETE', 'POST'])
+@app.route('/restaurant', methods=['GET', 'POST'])
+def route_restaurant_all(ID=None):
+    return Restaurant.get_delete_put_post(ID)
+
+@app.route('/restaurant/filter', methods=['GET'])
+def route_restaurant_filter():
+    return Restaurant.fuzzy_filter(request.args)
+
+@app.route('/restaurant/search', methods=['GET'])
+def route_restaurant_search():
+    print(request)
+    try:
+        search_str = request.args['search']
+        restaurants = Restaurant.query.filter(Restaurant.name.ilike('%' + search_str + '%')).all()
+    except:
+        abort(400, 'Missing argument: "search"')
+
+    return Restaurant.json_list(restaurants)
+
+@app.route('/restaurant/rate', methods=['POST'])
+@auth.login_required
+def route_restaurant_rate():
+    try:
+        restaurant_id = request.data['restaurant_id']
+        rating = request.data['rating']
+        price = request.data['price']
+    except:
+        abort(400, "Missing data in request.")
+    
+    return Restaurant.rate_restaurant(restaurant_id, rating, price)
 
 
 # Visit --------------------------
