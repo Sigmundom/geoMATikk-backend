@@ -137,8 +137,8 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     @classmethod
     def rate_restaurant(self, restaurant_id, rating, price):
         restaurant = Restaurant.query.get_or_404(restaurant_id)
-        restaurant.price_class += int(price)
-        restaurant.rating += int(rating)
+        restaurant.price_class_sum += int(price)
+        restaurant.rating_sum += int(rating)
         restaurant.number_of_ratings += 1
         db.session.commit()
         return {'message': 'success'}
@@ -156,18 +156,29 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         except:
             abort(400, "Could not parse request parameters")
 
-        if not priceParams['active'] and not nearbyParams['active'] and not ratingParams['active'] and not kitchenFilter:
+        if not priceParams['active'] and not nearbyParams['active'] and not nearbyParams['position'] and not ratingParams['active'] and not kitchenFilter :
             # No filter. Return all restaurants
             return Restaurant.json_list(Restaurant.query.all())
 
         # Get initial query with or without distance field.
         if nearbyParams['active'] and nearbyParams['position']:
+            print('searching with position')
             pos = nearbyParams['position']['coords']
             point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
-            restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class, func.ST_DistanceSphere(Restaurant.position,
-                        func.ST_GeomFromText(point)).label('distance'))
+            restaurants = db.session.query( Restaurant.id, 
+                                            Restaurant.rating_sum, 
+                                            Restaurant.price_class_sum,
+                                            Restaurant.number_of_ratings,
+                                            func.ST_DistanceSphere(
+                                                Restaurant.position,
+                                                func.ST_GeomFromText(point)).label('distance')
+                                            )
         else:
-            restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
+            restaurants = db.session.query( Restaurant.id, 
+                                            Restaurant.rating_sum, 
+                                            Restaurant.price_class_sum,
+                                            Restaurant.number_of_ratings,
+                                        )
             
         
         
@@ -184,6 +195,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         sum_weights = 0
 
         if nearbyParams['active'] and nearbyParams['position']:
+            print('is inside nerby if')
             min_distance = restaurants[0].distance
             for r in restaurants:
                 if (r.distance < min_distance):
@@ -201,7 +213,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
             sum_weights += weight 
 
             for i in range(n_restaurants):
-                rating = restaurants[i].rating
+                rating = restaurants[i].rating_sum/restaurants[i].number_of_ratings
                 if rating:
                     scores[i]['score'] += weight * ((rating-1)/4)**ALPHA
         
@@ -212,14 +224,18 @@ class Restaurant(db.Model, FlaskSerializeMixin):
             preffered_value = priceParams['prefferedValue']
 
             for i in range(n_restaurants):
-                price_class = restaurants[i].price_class
+                price_class = restaurants[i].price_class_sum/restaurants[i].number_of_ratings
                 if price_class:
                     score = (price_class-1)/4
                     if preffered_value == 'low':
                         score = 1 - score
                     scores[i]['score'] += weight * score**ALPHA
-        # if sum_weights == 0:
-        #     return Restaurant.json_list(restaurants)
+        
+        # No sum? return all
+        if sum_weights == 0:
+            return Restaurant.json_list(Restaurant.query.all()) # Restaurant.json_list(restaurants)
+
+        
         for item in scores:
             total_score = (item['score']/sum_weights)**(1/ALPHA)
             item['score'] = total_score
@@ -227,11 +243,11 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         scores = sorted(scores, key=lambda item:item['score'], reverse=True) #Sorts on score. Decending
 
         best_restaurants_id = [item['id'] for item in scores[:10]]
-        print(scores[:])
+        # print(scores[:])
         # print(scores[-1]) 
-        print (best_restaurants_id)
+        # print (best_restaurants_id)
         restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
-        print(restaurants.all())
+        # print(restaurants.all())
 
         return Restaurant.json_list(restaurants)
 
