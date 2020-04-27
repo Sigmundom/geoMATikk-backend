@@ -127,18 +127,22 @@ class Restaurant(db.Model, FlaskSerializeMixin):
     @classmethod
     def fuzzy_filter(self, params):
         ALPHA = 5
-        def normalize_array(array):
-            maximum = min(array)
-            norm = [float(i)/maximum for i in array]
+
         print(params)
         try:
             priceParams = json.loads(params['price'])
             nearbyParams = json.loads(params['nearby'])
             ratingParams = json.loads(params['rating'])
+            kitchenParams = params['kitchens']
+            kitchenFilter = kitchenParams.split(',') if len(kitchenParams)>0 else None
         except:
-            print("Could not parse request parameters")
-            return db.session.query(Restaurant)
+            abort(400, "Could not parse request parameters")
 
+        if not priceParams['active'] and not nearbyParams['active'] and not ratingParams['active'] and not kitchenFilter:
+            # No filter. Return all restaurants
+            return Restaurant.json_list(Restaurant.query.all())
+
+        # Get initial query with or without distance field.
         if nearbyParams['active'] and nearbyParams['position']:
             pos = nearbyParams['position']['coords']
             point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
@@ -147,15 +151,15 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         else:
             restaurants = db.session.query(Restaurant.id, Restaurant.rating, Restaurant.price_class)
             
-        kitchenParams = params['kitchens']
-        kitchenFilter = kitchenParams.split(',') if len(kitchenParams)>0 else None
+        
+        
         print(kitchenFilter)
 
-        if kitchenFilter == ['']:
-            print(kitchenFilter)
+        if kitchenFilter:
+            # Hard filter on kitchens
             restaurants = restaurants.filter(Restaurant.kitchen.overlap(cast(kitchenFilter, db.ARRAY(db.String))))
             if restaurants.count()==0:
-                return {'error': 'No restaurants matching chosen kitchens'}
+                return []
         
         scores = [{'id': r.id, 'score':0} for r in restaurants]
         n_restaurants = len(scores)
@@ -196,26 +200,23 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                     if preffered_value == 'low':
                         score = 1 - score
                     scores[i]['score'] += weight * score**ALPHA
-        if sum_weights == 0:
-            return {'error': 'No filter weights'}
+        # if sum_weights == 0:
+        #     return Restaurant.json_list(restaurants)
         for item in scores:
             total_score = (item['score']/sum_weights)**(1/ALPHA)
             item['score'] = total_score
                     
         scores = sorted(scores, key=lambda item:item['score'], reverse=True) #Sorts on score. Decending
 
-        best_restaurants_id = [item['id'] for item in scores[:9]]
-        print(scores[:9])
-        # print(scores[-1])
+        best_restaurants_id = [item['id'] for item in scores[:10]]
+        print(scores[:])
+        # print(scores[-1]) 
         print (best_restaurants_id)
         restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
         print(restaurants.all())
 
         return Restaurant.json_list(restaurants)
 
-
-# if params['search']:
-#                 restaurants = restaurants.filter(Restaurant.name.ilike('%' + params['search'] + '%'))
 
 
 # Template Model

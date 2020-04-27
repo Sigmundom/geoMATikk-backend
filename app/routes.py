@@ -22,8 +22,19 @@ def route_restaurant_all(ID=None):
     return Restaurant.get_delete_put_post(ID)
 
 @app.route('/restaurant/filter', methods=['GET'])
-def route_restaurant_search():
+def route_restaurant_filter():
     return Restaurant.fuzzy_filter(request.args)
+
+@app.route('/restaurant/search', methods=['GET'])
+def route_restaurant_search():
+    print(request)
+    try:
+        search_str = request.args['search']
+        restaurants = Restaurant.query.filter(Restaurant.name.ilike('%' + search_str + '%')).all()
+    except:
+        abort(400, 'Missing argument: "search"')
+
+    return Restaurant.json_list(restaurants)
 
 
 # Users --------------------------------------
