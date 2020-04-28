@@ -156,7 +156,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         except:
             abort(400, "Could not parse request parameters")
 
-        if not priceParams['active'] and not nearbyParams['active'] and not nearbyParams['position'] and not ratingParams['active'] and not kitchenFilter :
+        if not priceParams['active'] and not nearbyParams['active'] and not nearbyParams['position'] and not ratingParams['active'] and not kitchenFilter:
             # No filter. Return all restaurants
             return Restaurant.json_list(Restaurant.query.all())
 
@@ -164,7 +164,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         if nearbyParams['active'] and nearbyParams['position']:
             print('searching with position')
             pos = nearbyParams['position']['coords']
-            point = 'SRID=4326;POINT (%f %f)' %(pos['latitude'], pos['longitude'])
+            point = 'SRID=4326;POINT (%f %f)' %(pos['longitude'], pos['latitude'])
             restaurants = db.session.query( Restaurant.id, 
                                             Restaurant.rating_sum, 
                                             Restaurant.price_class_sum,
@@ -186,6 +186,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
 
         if kitchenFilter:
             # Hard filter on kitchens
+            print('Using kitchen')
             restaurants = restaurants.filter(Restaurant.kitchen.overlap(cast(kitchenFilter, db.ARRAY(db.String))))
             if restaurants.count()==0:
                 return []
@@ -195,7 +196,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
         sum_weights = 0
 
         if nearbyParams['active'] and nearbyParams['position']:
-            print('is inside nerby if')
+            print('Using position')
             min_distance = restaurants[0].distance
             for r in restaurants:
                 if (r.distance < min_distance):
@@ -208,7 +209,8 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                 distance = restaurants[i].distance
                 scores[i]['score'] += weight * max(0, min_distance/distance, 1-distance/5000)**ALPHA
         
-        if ratingParams['active']:            
+        if ratingParams['active']:    
+            print('Using rating')        
             weight = 0.2 * (ratingParams['weight'] + 1)
             sum_weights += weight 
 
@@ -218,6 +220,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                     scores[i]['score'] += weight * ((rating-1)/4)**ALPHA
         
         if priceParams['active']:
+            print('Using price')
             weight = 0.2 * (priceParams['weight'] + 1)
             sum_weights += weight 
 
