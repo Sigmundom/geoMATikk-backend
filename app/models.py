@@ -203,11 +203,14 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                     min_distance = r.distance
 
             weight = 0.2 * (nearbyParams['weight'] + 1) 
+            print(weight)
             sum_weights += weight 
-            
+            print(min_distance)
             for i in range(n_restaurants):
                 distance = restaurants[i].distance
                 scores[i]['score'] += weight * max(0, min_distance/distance, 1-distance/5000)**ALPHA
+                # scores[i]['score'] += weight * max(0, 1-(distance-min_distance)/5000)**ALPHA
+                print(distance, scores[i]['score'])
         
         if ratingParams['active']:    
             print('Using rating')        
