@@ -208,8 +208,7 @@ class Restaurant(db.Model, FlaskSerializeMixin):
             print(min_distance)
             for i in range(n_restaurants):
                 distance = restaurants[i].distance
-                scores[i]['score'] += weight * max(0, min_distance/distance, 1-distance/5000)**ALPHA
-                # scores[i]['score'] += weight * max(0, 1-(distance-min_distance)/5000)**ALPHA
+                scores[i]['score'] += weight * max(0, 1-(distance-min_distance)/5000)**ALPHA
                 print(distance, scores[i]['score'])
         
         if ratingParams['active']:    
@@ -248,12 +247,13 @@ class Restaurant(db.Model, FlaskSerializeMixin):
                     
         scores = sorted(scores, key=lambda item:item['score'], reverse=True) #Sorts on score. Decending
 
-        best_restaurants_id = [item['id'] for item in scores[:10]]
-        # print(scores[:])
-        # print(scores[-1]) 
-        # print (best_restaurants_id)
+        best_restaurants_id = []
+        [item['id'] for item in scores[:10]]
+        for item in scores[:10]:
+            if item['score'] > 0:
+                best_restaurants_id.append(item['id'])
+    
         restaurants = db.session.query(Restaurant).filter(Restaurant.id.in_(best_restaurants_id))
-        # print(restaurants.all())
 
         return Restaurant.json_list(restaurants)
 
