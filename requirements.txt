@@ -16,7 +16,7 @@ pip==20.0.2
 python-dateutil==2.8.1
 python-dotenv==0.11.0
 python-editor==1.0.4
-setuptools==45.2.0
+setuptools==65.5.1
 six==1.14.0
 #psycopg2==2.8.4
 flask-API==2.0
